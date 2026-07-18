@@ -89,7 +89,17 @@ Usar skill quando houver ganho claro. Skills anexadas têm prioridade operaciona
 
 ## Inventário externas P0 (2026-07-18)
 
-Instaladas via `npx skills add … -g -y` → `~/.agents/skills/` (PromptScript global falhou; copy ok).
+**SoT no repo:** skills P0 vivem em [`.agents/skills/`](../.agents/skills/) (ao lado das `merge-quest-*`) e versões em [`skills-lock.json`](../skills-lock.json). Colegas recebem via `git pull` — sem instalação extra para o workflow MQ.
+
+**Onboarding / refresh:**
+
+```bash
+# após clone ou para restaurar a partir do lock
+npx skills experimental_install
+
+# opcional: espelho global do operador (PromptScript -g falha; copy em ~/.agents/skills ok)
+npx skills add <owner/repo> -s <skill> -g -y --copy
+```
 
 | Skill | Pacote | Papel MQ |
 |-------|--------|----------|

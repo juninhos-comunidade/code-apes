@@ -43,9 +43,11 @@ Mapa operacional: [`docs/skills-map.md`](../skills-map.md).
 
 | Local | Papel |
 |-------|--------|
-| `.agents/skills/merge-quest-*` | **Canônico** no repo (tool-agnóstico) |
-| `~/.cursor/skills/` ou plugin skills | Locais/externos do operador |
-| `npx skills add …` | Instala externas; mapear em `docs/skills-map.md` |
+| `.agents/skills/merge-quest-*` | **Canônico** MQ no repo (tool-agnóstico) |
+| `.agents/skills/<externa-P0>` + `skills-lock.json` | Externas P0 versionadas no repo (ver `docs/skills-map.md`) |
+| `~/.cursor/skills/` ou `~/.agents/skills/` | Locais/espelho opcional do operador |
+| `npx skills experimental_install` | Restaura externas P0 a partir do lock |
+| `npx skills add … -y --copy` | Adiciona/atualiza externa; atualizar mapa |
 
 Não é obrigatório symlinks `.cursor/skills` → repo para skills MQ.
 
