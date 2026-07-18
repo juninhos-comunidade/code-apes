@@ -1,0 +1,11 @@
+{
+  "name": "@merge-quest/testing",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "typescript": "catalog:",
+    "vitest": "^3.2.0"
+  }
+}

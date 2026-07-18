@@ -1,0 +1,13 @@
+{
+  "name": "@merge-quest/game-runtime",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "@merge-quest/game-core": "workspace:*",
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

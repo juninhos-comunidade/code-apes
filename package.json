@@ -1,0 +1,28 @@
+{
+  "name": "merge-quest",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24.14.0 <25"
+  },
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "build": "turbo run build",
+    "check:reproducibility": "node tooling/validation/check-reproducibility.mjs",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "verify": "pnpm check:reproducibility && pnpm typecheck && pnpm test && pnpm lint && pnpm build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.53.0",
+    "eslint": "^9.29.0",
+    "prettier": "^3.5.0",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.64.0",
+    "vitest": "^3.2.0"
+  }
+}

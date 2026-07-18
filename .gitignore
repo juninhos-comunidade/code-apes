@@ -1,0 +1,103 @@
+# Dependencies and package-manager state
+node_modules/
+.pnpm-store/
+.pnp.*
+
+# Turborepo and task caches
+.turbo/
+.cache/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.vite/
+*.tsbuildinfo
+
+# Test output
+coverage/
+playwright-report/
+test-results/
+blob-report/
+*.lcov
+
+# Logs and runtime files
+logs/
+*.log
+*.pid
+*.pid.lock
+pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local databases, Supabase and emulators
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+.supabase/
+supabase/.branches/
+supabase/.temp/
+
+# Python residue from backend experiments or tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editors and IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files and scratch exports
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+art/tmp/
+art/scratch/
+
+# Generated local previews that are not approved exports
+art/previews/local/
+
+# Deployment-provider local state
+.vercel/
+.netlify/
+.railway/
+
+# Keep source art, approved exports, references, licenses and docs tracked.

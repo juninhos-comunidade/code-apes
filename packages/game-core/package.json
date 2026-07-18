@@ -1,0 +1,9 @@
+{
+  "name": "@merge-quest/game-core",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

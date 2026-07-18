@@ -1,0 +1,9 @@
+{
+  "name": "@merge-quest/telemetry",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}
