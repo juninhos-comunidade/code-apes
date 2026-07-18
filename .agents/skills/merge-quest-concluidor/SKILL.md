@@ -21,7 +21,7 @@ description: Close a Merge Quest agent session after Reviewer approval — concl
 2. Confirmar evidência fresca (testes/gate citados no review).
 3. Escrever `sessions/<id>/conclusion.md` (`templates/conclusion.md`).
 4. Extrair learnings → alimentar `merge-quest-learned-practices` / Documentação (só práticas repetíveis).
-5. **Propor** updates Linear (`MQ-*` → Done/comment) via preview; criar/atualizar só com Approval.
+5. **Propor** updates Linear (`MER-*` → Done/comment) via preview; criar/atualizar só com Approval.
 6. Rascunhar commit convencional + corpo de PR — **não commit/push** sem pedido explícito.
 7. `phase.md` → `conclusion`.
 

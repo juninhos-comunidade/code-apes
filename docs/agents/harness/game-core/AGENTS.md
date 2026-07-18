@@ -21,7 +21,7 @@ Skill: `merge-quest-game-core` · **Implementa** regras determinísticas.
 
 ## Entrada
 
-Approval + fatia `[mq:game-core]` + critérios `MQ-*` / spec.
+Approval + fatia `[mq:game-core]` + critérios `MER-*` / spec.
 
 ## Saída
 

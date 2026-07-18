@@ -1,7 +1,7 @@
 # Plan — `<sessionId>`
 
 **Trilha:**  
-**linearIssues:** MQ-…  
+**linearIssues:** MER-…  
 **Base:** brief + specs/ADRs
 
 ## Objetivo
@@ -10,7 +10,7 @@
 
 ## Fatias
 
-### 1. `<id>` `[mq:<área>]` — MQ-…
+### 1. `<id>` `[mq:<área>]` — MER-…
 
 - **Faz:**
 - **Aceite:**

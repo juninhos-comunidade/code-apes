@@ -18,7 +18,7 @@ description: Implement Merge Quest React shell (apps/web) — UX flows, Design S
 
 ## Workflow
 
-1. Ler `docs/agents/harness/web/AGENTS.md`, contratos, plan, `MQ-*`.
+1. Ler `docs/agents/harness/web/AGENTS.md`, contratos, plan, `MER-*`.
 2. UI consome contratos/adaptadores; estado de jogo vem do core/runtime.
 3. Superfícies de IA: mostrar interpretação/contexto; **não** fabricar competência.
 4. Acessibilidade e estados loading/error explícitos.
@@ -39,7 +39,7 @@ description: Implement Merge Quest React shell (apps/web) — UX flows, Design S
 
 ## Saída
 
-- diff web + critérios `MQ-*` cobertos;
+- diff web + critérios `MER-*` cobertos;
 - notas de contrato/API consumidos.
 
 ## Referências

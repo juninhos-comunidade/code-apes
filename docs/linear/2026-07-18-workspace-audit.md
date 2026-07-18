@@ -14,7 +14,7 @@
 | Labels `type:*` + needs-review + blocked | OK |
 | Milestone `documentação canônica` (Arquitetura) | OK |
 | Milestones demo path (8 em Demo e entrega) | OK |
-| Backlog fundação MQ-5…MQ-10 | OK |
+| Backlog fundação MER-5…MER-10 | OK |
 | Initiative na UI | **Pendente** — MCP sem `save_initiative` |
 
 ## Projects
@@ -34,15 +34,15 @@
 
 | ID | Título |
 |----|--------|
-| MQ-5 | Bootstrap agent workflow (harness + skills) — In Progress |
-| MQ-6 | Documentar contrato Linear↔repo |
-| MQ-7 | Audit Linear workspace pós-bootstrap |
-| MQ-8 | Vertical slice — critérios jogáveis rastreáveis |
-| MQ-9 | game-core — skeleton + primeiro teste TDD |
-| MQ-10 | Design Book v1 (placeholder canônico) |
+| MER-5 | Bootstrap agent workflow (harness + skills) — In Progress |
+| MER-6 | Documentar contrato Linear↔repo |
+| MER-7 | Audit Linear workspace pós-bootstrap |
+| MER-8 | Vertical slice — critérios jogáveis rastreáveis |
+| MER-9 | game-core — skeleton + primeiro teste TDD |
+| MER-10 | Design Book v1 (placeholder canônico) |
 
 ## Ação humana restante
 
 1. Criar Initiative `Merge Quest — Vertical Slice e MVP` na UI e vincular projects.  
 2. Convidar Hahn se ainda não estiver no workspace.  
-3. Fechar onboarding MQ-2…MQ-4 quando conveniente.
+3. Fechar onboarding MER-2…MER-4 quando conveniente.

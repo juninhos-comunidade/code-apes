@@ -24,7 +24,7 @@ description: Adversarially attack Merge Quest plans before human Approval — sc
 
 1. Ler `docs/agents/harness/challenger/AGENTS.md` + `plan.md` + brief.
 2. Atacar com checklist MQ:
-   - escopo além do vertical slice / issue `MQ-*`;
+   - escopo além do vertical slice / issue `MER-*`;
    - regra em React/Phaser/API em vez de `game-core`;
    - `game-core` importando framework/DB/IA;
    - IA inventando pergunta/resposta/veredito (ADR-0003);

@@ -13,7 +13,7 @@
 - Backlog Linear P0-VS alinhado à jornada Carta Magna §2.2 e doc 09.
 - Mapping RF → issues (ver abaixo).
 - Handoffs React↔Phaser / Frontend↔API reforçados em issues MER-27 e docs/product/10.
-- Nomenclatura canônica `MQ-*` em `docs/linear/naming.md` (identifier UI ainda pode estar `MER` até alteração manual).
+- Nomenclatura canônica `MER-*` em `docs/linear/naming.md` (team identifier `MER`).
 
 ## Arquivado / não promover (conflito com canônicos)
 
@@ -25,7 +25,7 @@
 | “Torre da Vaga” naming | Produto = Merge Quest |
 | LibreSprite / stacks antigas | Ver decision-log / ADRs |
 
-## Mapping RF → Linear (IDs atuais; prefixo vira MQ-* após Settings)
+## Mapping RF → Linear (`MER-*`)
 
 | RF | Issue |
 |----|-------|

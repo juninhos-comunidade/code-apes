@@ -1,7 +1,7 @@
 # Phase — dry-run-2026-07-18-full
 
 - track: Full
-- linearIssues: [MQ-5, MQ-6, MQ-7]
+- linearIssues: [MER-5, MER-6, MER-7]
 - phase: conclusion
 
 ## Checklist

@@ -3,7 +3,7 @@
 ```yaml
 sessionId: _template
 track: Full # Full | Light | Asset-Content
-linearIssues: [] # ex.: [MQ-12, MQ-13]
+linearIssues: [] # ex.: [MER-12, MER-13]
 phase: helper # helper|decomposition|planning|challenge|approval|team|review|conclusion
 pendingTeamTasks: []
 approvals: [] # ex.: [approvals/2026-07-18-plan.md]
@@ -15,7 +15,7 @@ updatedBy: agent:template
 
 - [ ] **helper** — `brief.md` preenchido; trilha escolhida
 - [ ] **decomposition** — spec/ADR ou N/A justificado; proposal Linear se houver issues novas
-- [ ] **planning** — `plan.md` com fatias, `[mq:…]`, mapeamento MQ-*
+- [ ] **planning** — `plan.md` com fatias, `[mq:…]`, mapeamento MER-*
 - [ ] **challenge** — `challenge.md` (obrigatório Full / Asset-Content)
 - [ ] **approval** — artefato em `approvals/` (chat ≠ Approval)
 - [ ] **team** — fatias executadas; `pendingTeamTasks` vazio ou bloqueios listados

@@ -25,7 +25,7 @@ description: Start every Merge Quest ask with discovery lenses, FATO/DECISÃO la
    - fronteira `game-core` vs apresentação;
    - IA não inventa (ADR-0003);
    - Design Book / asset contract (se arte);
-   - Linear `MQ-*` existente vs proposta nova.
+   - Linear `MER-*` existente vs proposta nova.
 4. Classificar cada ponto fechado como `[FATO]` (verificável) ou `[DECISÃO]` (precisa humano).
 5. Escrever `docs/agents/sessions/<id>/brief.md` a partir de `docs/agents/templates/brief.md`.
 6. Atualizar `phase.md` → `helper`; após Approval do brief → `decomposition`.
@@ -35,7 +35,7 @@ description: Start every Merge Quest ask with discovery lenses, FATO/DECISÃO la
 
 - **Chat ≠ Approval** — frase humana é hipótese até artefato `approval`.
 - Não implementar código.
-- Não criar issues Linear; no máximo listar candidatos `MQ-*`.
+- Não criar issues Linear; no máximo listar candidatos `MER-*`.
 - Sem Cursor hooks — avanço de fase é manual/contrato em arquivo.
 - Bugfix: grill curto (repro + FATO/DECISÃO + issue), ainda obrigatório.
 

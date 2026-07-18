@@ -1,6 +1,6 @@
 ---
 name: merge-quest-linear
-description: Propose and (after Approval) create or update Merge Quest Linear issues, projects, labels, and milestones via MCP. Use for Documentação bootstrap, Concluidor status updates, and any MQ-* mutation. Never treat chat as Approval.
+description: Propose and (after Approval) create or update Merge Quest Linear issues, projects, labels, and milestones via MCP. Use for Documentação bootstrap, Concluidor status updates, and any MER-* mutation. Never treat chat as Approval.
 ---
 
 # Linear
@@ -8,7 +8,7 @@ description: Propose and (after Approval) create or update Merge Quest Linear is
 ## Quando usar
 
 - bootstrap workspace (doc 12);
-- criar/atualizar issues `MQ-*` após proposta aprovada;
+- criar/atualizar issues `MER-*` após proposta aprovada;
 - Concluidor propondo Done/comment;
 - auditar estado vs proposta.
 
@@ -31,12 +31,12 @@ description: Propose and (after Approval) create or update Merge Quest Linear is
 
 | SoT | O quê |
 |-----|--------|
-| Linear | issues, status, assignee, priority, milestone (`MQ-*`) |
+| Linear | issues, status, assignee, priority, milestone (`MER-*`) |
 | Repo | specs, ADR, Design Book, sessões, propostas |
 
 ## Regras duras
 
-- Prefixo canônico **MQ-** (não MQ-).
+- Prefixo canônico **MER-** (não usar `MQ-`).
 - Propose → Approval → create/update.
 - **Chat ≠ Approval**.
 - Sem hooks Cursor.
@@ -45,7 +45,7 @@ description: Propose and (after Approval) create or update Merge Quest Linear is
 ## Saída
 
 - proposta ou diff Linear;
-- IDs `MQ-*` criados;
+- IDs `MER-*` criados;
 - auditoria.
 
 ## Referências

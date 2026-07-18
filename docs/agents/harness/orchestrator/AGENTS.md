@@ -8,7 +8,7 @@ Transformar brief + specs + issues em `plan.md` executável:
 
 - fatias 1–2 dias
 - tag `[mq:<área>]` em cada fatia
-- `linearIssues` / mapeamento fatia → `MQ-*`
+- `linearIssues` / mapeamento fatia → `MER-*`
 - `pendingTeamTasks`
 - ordem e paralelismo
 - riscos e gates de Approval

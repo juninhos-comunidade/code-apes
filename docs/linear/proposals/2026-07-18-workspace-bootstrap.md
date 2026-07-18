@@ -2,7 +2,7 @@
 
 **Workspace:** https://linear.app/mergequest  
 **Team:** Merge Quest  
-**Issue prefix:** `MQ-`  
+**Issue prefix:** `MER-`  
 **Status:** aplicada 2026-07-18 — ver `docs/linear/2026-07-18-workspace-audit.md`
 
 ## Initiative
@@ -67,4 +67,4 @@ Manter defaults Feature / Improvement / Bug ou migrar gradualmente para `type:*`
 ## Não fazer nesta leva
 
 - Implementar combate, Phaser scenes, API de produção
-- Cancelar issues de onboarding MQ-2..4 (deixar o time fechar)
+- Cancelar issues de onboarding MER-2..4 (deixar o time fechar)

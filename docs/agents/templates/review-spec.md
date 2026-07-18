@@ -1,6 +1,6 @@
 # Review — eixo Spec/Aceite — `<sessionId>`
 
-**Issues:** MQ-…  
+**Issues:** MER-…  
 **Spec/ADR:**  
 
 ## Critérios

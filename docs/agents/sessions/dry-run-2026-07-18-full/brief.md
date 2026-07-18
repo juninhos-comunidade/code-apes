@@ -2,7 +2,7 @@
 
 - **sessionId:** dry-run-2026-07-18-full
 - **track:** Full
-- **linearIssues:** MQ-5, MQ-6
+- **linearIssues:** MER-5, MER-6
 - **pedido (hipótese):** Implementar harness multi-agente Merge Quest
 
 ## [FATO]

@@ -20,7 +20,7 @@ Avaliação Linear: [`mcp-linear-evaluation.md`](mcp-linear-evaluation.md).
 1. Garantir servidor `plugin-linear-linear` no Cursor.
 2. Se `needsAuth`, rodar tool `mcp_auth` e concluir OAuth no browser.
 3. Smoke **somente leitura** primeiro: `list_teams`, `list_projects`, `list_issues`, `list_issue_labels`.
-4. Workspace esperado: **mergequest** · Team: **Merge Quest** · prefixo canônico **`MQ-*`**. Se issues ainda aparecem como `MER-*`, alterar Identifier do team para `MQ` em Settings → Teams → Merge Quest (MCP não altera identifier).
+4. Workspace esperado: **mergequest** · Team: **Merge Quest** · prefixo canônico **`MER-*`** (identifier do team = `MER`; não renomear para `MQ`).
 5. Mutações (`save_issue`, `save_project`, labels…): só após **Approval** + proposta (doc 12 / proposal file).
 6. Gap conhecido: `list_projects` + milestones pode estourar complexity — usar `list_milestones` por project.
 7. Sem tool de Initiative — criar na UI se necessário.
@@ -76,7 +76,7 @@ No ambiente deste bootstrap (2026-07-18), `grill-me` e `grilling` foram restaura
 
 ```
 [ ] Linear: list_teams → Merge Quest
-[ ] Linear: list_issues → prefixo MQ-
+[ ] Linear: list_issues → prefixo MER-
 [ ] Linear: mutação só com Approval
 [ ] gh: gh auth status OK
 [ ] Supabase: N/A ou smoke read documentado

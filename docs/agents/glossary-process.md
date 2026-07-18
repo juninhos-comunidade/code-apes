@@ -16,7 +16,7 @@
 | **`[FATO]`** | Verificável em código/spec/Linear sem julgamento de produto |
 | **`[DECISÃO]`** | Exige humano (escopo, trade-off, prioridade) |
 | **`[mq:<área>]`** | Tag de roteamento da fatia |
-| **`MQ-n`** | ID canônico de issue no Linear |
+| **`MER-n`** | ID canônico de issue no Linear |
 | **SoT** | Source of truth |
 | **Dual backlog** | Antipattern: markdown Epic/US + Linear como duas verdades |
 | **Documentação** | Papel que escreve specs e *propõe* Linear |

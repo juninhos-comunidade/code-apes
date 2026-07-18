@@ -3,7 +3,7 @@
 ## Princípio
 
 - **Repo** = specs, ADRs, RFCs, contratos, Design Book, sessões.
-- **Linear** = issues verificáveis (`MQ-n`), status, assignee, prioridade, milestone, labels.
+- **Linear** = issues verificáveis (`MER-n`), status, assignee, prioridade, milestone, labels.
 - **Não** criar `docs/backlog/` canônico (Epic/US markdown como SoT).
 
 Espelho offline opcional: `docs/linear/proposals/<data>-*.md` — nunca substitui o Linear após sync.
@@ -25,7 +25,7 @@ Propor (proposal + preview MCP)
   → Approval em arquivo
   → Criar/atualizar via plugin-linear-linear (ou UI)
   → Auditar listagem vs proposta
-  → Referenciar MQ-* em phase.md e plan.md
+  → Referenciar MER-* em phase.md e plan.md
 ```
 
 **Proibido:** criar Project/label/issue “porque o chat pediu” sem Approval quando a ação muta o workspace.
@@ -47,10 +47,10 @@ Propor (proposal + preview MCP)
 Em `phase.md`:
 
 ```yaml
-linearIssues: [MQ-12, MQ-13]
+linearIssues: [MER-12, MER-13]
 ```
 
-Cada fatia do `plan.md` aponta para ≥1 `MQ-*` (ou declara chore sem issue com justificativa Light + Approval).
+Cada fatia do `plan.md` aponta para ≥1 `MER-*` (ou declara chore sem issue com justificativa Light + Approval).
 
 ## Fechamento
 

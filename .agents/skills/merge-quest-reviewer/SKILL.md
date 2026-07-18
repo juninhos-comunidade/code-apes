@@ -22,7 +22,7 @@ description: Review Merge Quest delivery evidence against Linear acceptance and 
 
 ## Workflow
 
-1. Ler `docs/agents/harness/reviewer/AGENTS.md`, plan, `MQ-*`, diff — **não** o histórico do implementador.
+1. Ler `docs/agents/harness/reviewer/AGENTS.md`, plan, `MER-*`, diff — **não** o histórico do implementador.
 2. Eixo SPEC → `reviews/spec.md` (`templates/review-spec.md`): fidelidade ao aceite/spec/Linear.
 3. Eixo CODE → `reviews/code.md` (`templates/review-code.md`): camadas, POO, TDD, contratos.
 4. Rodar `merge-quest-architecture-guard` quando tocar domínio/core/API.
@@ -32,7 +32,7 @@ description: Review Merge Quest delivery evidence against Linear acceptance and 
 
 ## Checklist rápido
 
-- aceite `MQ-*` atendido com prova;
+- aceite `MER-*` atendido com prova;
 - `game-core` sem React/Phaser/DB;
 - IA não inventa (ADR-0003);
 - docs/contratos atualizados se a mudança exige;

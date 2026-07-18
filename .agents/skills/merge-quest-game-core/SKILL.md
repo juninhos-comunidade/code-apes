@@ -16,7 +16,7 @@ description: Implement deterministic Merge Quest game rules and state in package
 
 ## Workflow
 
-1. Ler `docs/agents/harness/game-core/AGENTS.md`, ADR-0002, doc 07, plan, `MQ-*`.
+1. Ler `docs/agents/harness/game-core/AGENTS.md`, ADR-0002, doc 07, plan, `MER-*`.
 2. TDD: RED → GREEN → REFACTOR para a regra.
 3. Manter funções puras / entidades / VOs; composição > herança.
 4. Exportar comandos/eventos tipados; sem I/O.
@@ -33,7 +33,7 @@ description: Implement deterministic Merge Quest game rules and state in package
 
 - Só após Approval do plano (artefato).
 - **Chat ≠ Approval**.
-- Citar `MQ-*`; não expandir escopo silencioso.
+- Citar `MER-*`; não expandir escopo silencioso.
 - Sem hooks Cursor.
 
 ## Saída

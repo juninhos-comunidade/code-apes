@@ -43,7 +43,7 @@ Helper → Documentação(+Linear propose) → Orchestrator → Challenger
   → Approval (arquivo) → Team → Reviewer → Concluidor
 ```
 
-Contexto: `sessions/<id>/`. Issues: Linear `MQ-*`. **Sem** hooks Cursor. **Chat ≠ Approval.**
+Contexto: `sessions/<id>/`. Issues: Linear `MER-*`. **Sem** hooks Cursor. **Chat ≠ Approval.**
 
 ## Templates e sessões
 

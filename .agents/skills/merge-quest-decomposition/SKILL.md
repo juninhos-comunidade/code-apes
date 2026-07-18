@@ -1,6 +1,6 @@
 ---
 name: merge-quest-decomposition
-description: Turn an approved Merge Quest brief into Linear-ready issue proposals, acceptance criteria, and session decomposition artifacts. Use after Helper approval — before Orchestrator plans. Propose MQ-* issues; never create without Approval.
+description: Turn an approved Merge Quest brief into Linear-ready issue proposals, acceptance criteria, and session decomposition artifacts. Use after Helper approval — before Orchestrator plans. Propose MER-* issues; never create without Approval.
 ---
 
 # Decomposition (Documentação + Linear)
@@ -22,7 +22,7 @@ description: Turn an approved Merge Quest brief into Linear-ready issue proposal
 1. Ler `docs/agents/harness/documentation/AGENTS.md` e `docs/agents/decomposition-linear.md`.
 2. Partir o brief em entregas verificáveis (1 responsável, 1–2 dias, critérios).
 3. Para cada fatia: aceite testável, dependências, docs/ADR/spec, área `[mq:<area>]`.
-4. **Propor** issues `MQ-*` (artefato no repo / preview MCP) — **não criar** ainda.
+4. **Propor** issues `MER-*` (artefato no repo / preview MCP) — **não criar** ainda.
 5. Se precisar spec/RFC/ADR: rascunhar no repo (SoT de especificação).
 6. Atualizar sessão: `phase.md` → `decomposition`; listar `linearIssues` propostos.
 7. Aguardar Approval → então `merge-quest-linear` cria via MCP.
@@ -30,7 +30,7 @@ description: Turn an approved Merge Quest brief into Linear-ready issue proposal
 
 ## Regras duras
 
-- **Linear = SoT** de issues/status/assignee; prefixo **MQ-**.
+- **Linear = SoT** de issues/status/assignee; prefixo **MER-**.
 - **Repo = SoT** de specs/ADR/sessões.
 - Propose → Approval → create (doc 12 + `merge-quest-linear`).
 - **Chat ≠ Approval**.

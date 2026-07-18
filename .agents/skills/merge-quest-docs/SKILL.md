@@ -24,7 +24,7 @@ description: Author and maintain Merge Quest repository docs — specs, ADRs, RF
 2. Escolher artefato: spec / ADR / RFC / workflow / session template.
 3. Precedência: ADR aprovado > spec > guides > history.
 4. Cross-link harness/skills; evitar docs fantasma.
-5. Se impactar issues: **propor** `MQ-*` (`merge-quest-decomposition` / `merge-quest-linear`).
+5. Se impactar issues: **propor** `MER-*` (`merge-quest-decomposition` / `merge-quest-linear`).
 6. Pedir Approval para ADR status / mudanças normativas amplas.
 
 ## Regras duras

@@ -7,7 +7,7 @@ description: Assemble Merge Quest plans, tags [mq:area], Linear issue IDs, and t
 
 ## Quando usar
 
-- pós-decomposição com issues `MQ-*` (ou proposta aprovada);
+- pós-decomposição com issues `MER-*` (ou proposta aprovada);
 - humano rejeitou plano (brief ainda válido) — revisar aqui.
 
 ## Quando não usar
@@ -22,7 +22,7 @@ description: Assemble Merge Quest plans, tags [mq:area], Linear issue IDs, and t
 2. Montar plano em `docs/agents/sessions/<id>/plan.md` (`templates/plan.md`):
    - arquivos;
    - perfil de verify / delivery-gate;
-   - aceite por issue `MQ-*`;
+   - aceite por issue `MER-*`;
    - tags `[mq:game-core|runtime|web|api|content|art|qa|…]`.
 3. `phase.md` → `planning`.
 4. Acionar **Challenger** (`merge-quest-challenger`) antes de Approval (Full / Asset-Content).
@@ -35,7 +35,7 @@ description: Assemble Merge Quest plans, tags [mq:area], Linear issue IDs, and t
 
 - Nunca implementar.
 - Nunca tratar mensagem de chat como Approval.
-- Linear SoT: plano cita `MQ-*`; não inventar IDs.
+- Linear SoT: plano cita `MER-*`; não inventar IDs.
 - Sem Cursor hooks — handoff por artefato + mensagem explícita.
 - `game-core` sem React/Phaser/DB; IA não inventa (ADR-0003).
 

@@ -13,11 +13,11 @@ Merge Quest é um RPG técnico pixel-art: React (shell) + Phaser (`game-runtime`
 
 | Domínio | SoT |
 |---------|-----|
-| Issues, status, assignee, prioridade, milestone | **Linear** (prefixo `MQ-`, team Merge Quest) |
+| Issues, status, assignee, prioridade, milestone | **Linear** (prefixo `MER-`, team Merge Quest) |
 | Specs, ADRs, RFCs, contratos, Design Book, sessões | **Repositório** |
 | Estado/regras do jogo | **`game-core`** |
 
-Não há árvore canônica `docs/backlog/` estilo Epic/US. Issues vivem no Linear; a sessão no repo referencia `linearIssues: [MQ-…]`.
+Não há árvore canônica `docs/backlog/` estilo Epic/US. Issues vivem no Linear; a sessão no repo referencia `linearIssues: [MER-…]`.
 
 ---
 
@@ -76,6 +76,6 @@ Consultar [`docs/skills-map.md`](docs/skills-map.md) e [`docs/agents/skill-sets.
 
 ## Branches e issues
 
-- Issue canônica: `MQ-<n>` (Linear).
+- Issue canônica: `MER-<n>` (Linear).
 - Branch sugerida: alinhar ao Linear (`tipo/mer-<n>-descricao` ou equivalente curto).
 - PR: critérios de aceite + link da issue + sessão quando houver.

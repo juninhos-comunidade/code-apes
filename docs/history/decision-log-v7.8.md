@@ -9213,10 +9213,10 @@ Estratégia recomendada:
 Padrão de branch:
 
 ```text
-feat/MQ-123-battle-timer
-fix/MQ-201-card-placement
-art/MQ-305-hero-walk
-docs/MQ-044-carta-magna
+feat/MER-123-battle-timer
+fix/MER-201-card-placement
+art/MER-305-hero-walk
+docs/MER-044-carta-magna
 ```
 
 ### 162.11 Ownership

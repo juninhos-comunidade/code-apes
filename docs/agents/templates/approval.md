@@ -18,7 +18,7 @@
 
 ## linearIssues autorizadas
 
-- MQ-…
+- MER-…
 
 ## Autorizações explícitas
 

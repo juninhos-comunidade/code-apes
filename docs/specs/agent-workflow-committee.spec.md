@@ -14,7 +14,7 @@ Definir o contrato verificável do committee multi-agente Merge Quest: papéis, 
 
 - Papéis, trilhas, fases, tags `[mq:<área>]`
 - Sessões em `docs/agents/sessions/<id>/`
-- Contrato Linear (`MQ-*`) ↔ repo
+- Contrato Linear (`MER-*`) ↔ repo
 - Challenger pré-Team
 - Ausência de hooks Cursor no núcleo
 
@@ -28,7 +28,7 @@ Definir o contrato verificável do committee multi-agente Merge Quest: papéis, 
 
 | Artefato | SoT | Espelho |
 |----------|-----|---------|
-| Issue, status, assignee, priority, milestone, labels | Linear (`MQ-n`) | Proposals opcionais em `docs/linear/proposals/` (offline) |
+| Issue, status, assignee, priority, milestone, labels | Linear (`MER-n`) | Proposals opcionais em `docs/linear/proposals/` (offline) |
 | Spec, ADR, RFC, contratos, Design Book | Repo | — |
 | Sessão (brief, plan, challenge, reviews, conclusion, approvals) | Repo | — |
 | Estado/regras de jogo | `game-core` | — |
@@ -100,7 +100,7 @@ Templates: [`docs/agents/templates/`](../agents/templates/) e [`sessions/_templa
 ```yaml
 sessionId: string
 track: Full | Light | Asset-Content
-linearIssues: [MQ-n, ...]
+linearIssues: [MER-n, ...]
 phase: helper|decomposition|planning|challenge|approval|team|review|conclusion
 pendingTeamTasks: [string]
 approvals: [path]
@@ -121,7 +121,7 @@ Orchestrator **deve** taggear cada fatia do plano. Fatia sem tag é inválida pa
 
 ## 10. Linear
 
-Workspace: mergequest · Team: Merge Quest · Prefixo: `MQ-`.
+Workspace: mergequest · Team: Merge Quest · Prefixo: `MER-`.
 
 Fluxo Documentação:
 

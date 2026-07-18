@@ -10,7 +10,7 @@
 
 ## Fatias
 
-### 1. `T-001` `[mq:docs]` — MQ-?
+### 1. `T-001` `[mq:docs]` — MER-?
 
 - **Faz:**
 - **Aceite:**

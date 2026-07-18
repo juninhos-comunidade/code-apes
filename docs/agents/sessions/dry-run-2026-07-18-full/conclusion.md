@@ -3,7 +3,7 @@
 ## Entregue
 
 - MCP Linear autenticado e avaliado (Go com gaps)
-- Workspace: 10 projects, labels, milestones, issues MQ-5…MQ-10
+- Workspace: 10 projects, labels, milestones, issues MER-5…MER-10
 - ADR-0006, spec, agent.md, docs/agents/**, harnesses, templates
 - 19 skills em `.agents/skills/`
 - skill-sets + skills-map
@@ -17,7 +17,7 @@
 - [x] Workflow em markdown no repo
 - [x] MCP Linear documentado com fallback UI/proposal
 - [x] Skills in-repo; externas só no mapa
-- [x] Prefixos/IDs Linear (`MQ-*`) no contrato, não amarrados a Cursor
+- [x] Prefixos/IDs Linear (`MER-*`) no contrato, não amarrados a Cursor
 
 ## Checklist anti-dual-backlog
 
@@ -29,4 +29,4 @@
 
 - Criar Initiative na UI Linear
 - Autenticar Supabase MCP quando houver projeto
-- Fechar MQ-5 após review do PR deste slice
+- Fechar MER-5 após review do PR deste slice

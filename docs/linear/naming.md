@@ -2,11 +2,11 @@
 
 ## Prefixo de issue
 
-- Canônico no repo e no processo: **`MQ-*`**
-- Team identifier no Linear deve ser **`MQ`** (Settings → Teams → Merge Quest → Identifier)
-- Se o workspace ainda mostrar `MER-*`, alterar o identifier na UI; os números das issues permanecem e o prefixo atualiza
+- Canônico no repo e no processo: **`MER-*`**
+- Team identifier no Linear: **`MER`** (Settings → Teams → Merge Quest → Identifier)
+- Não renomear para `MQ` — o workspace e o contrato do repo usam `MER-*`
 
-Branches: `tipo/MQ-123-descricao` (ver `CONTRIBUTING.md` / `AGENTS.md`).
+Branches: `tipo/MER-123-descricao` (ver `CONTRIBUTING.md` / `AGENTS.md`).
 
 ## Labels (usar estas)
 
@@ -42,7 +42,7 @@ Alinhar ao label de produto:
 - path/canônico
 
 ## Depende de
-- MQ-…
+- MER-…
 
 ## Owner
 Eduardo | Hahn | Guilherme

@@ -79,4 +79,4 @@ Harnesses: [`harness/`](harness/).
 
 ## Relação com Linear
 
-Ver [`decomposition-linear.md`](decomposition-linear.md). Sessão sempre lista `linearIssues: [MQ-…]` em `phase.md`.
+Ver [`decomposition-linear.md`](decomposition-linear.md). Sessão sempre lista `linearIssues: [MER-…]` em `phase.md`.

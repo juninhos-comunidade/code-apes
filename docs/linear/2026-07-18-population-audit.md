@@ -1,8 +1,8 @@
 # Audit — população Linear P0-VS — 2026-07-18
 
 **Workspace:** https://linear.app/mergequest  
-**Team key atual no MCP:** ainda **`MER`** (alterar para **`MQ`** em Settings → Teams → Identifier)  
-**Repo:** nomenclatura canônica já é `MQ-*` (`docs/linear/naming.md`)
+**Team key no MCP / Linear:** **`MER`** (canônico; não renomear para `MQ`)  
+**Repo:** nomenclatura canônica `MER-*` (`docs/linear/naming.md`)
 
 ## Contagem
 
@@ -36,15 +36,13 @@
 
 ## Gaps / ações humanas
 
-1. **Trocar identifier MER → MQ** (Settings) — só assim IDs passam a `MQ-*`
-2. Criar Initiative na UI e vincular 10 projects
-3. Convidar **Hahn** ao workspace (assignee hoje placeholder Gui em issues de API)
-4. PR do harness de agentes (MER-5)
+1. Criar Initiative na UI e vincular 10 projects
+2. Convidar **Hahn** ao workspace (assignee hoje placeholder Gui em issues de API)
+3. PR do harness de agentes (MER-5)
 
 ## Smoke MCP
 
 - [x] `list_teams` → Merge Quest
-- [x] `list_issues` → 30 ativas
+- [x] `list_issues` → 30 ativas · prefixo `MER-*`
 - [x] Parents/`parentId` em jornada e game-core
 - [x] Labels `area:*` / `priority:p0-vs` / `type:*`
-- [ ] Prefixos `MQ-*` (bloqueado até Settings)

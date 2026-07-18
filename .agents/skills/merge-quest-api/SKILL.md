@@ -35,7 +35,7 @@ description: Implement Merge Quest API application/infrastructure behind contrac
 
 - Approval para mutações externas / DB compartilhado / serviços pagos.
 - **Chat ≠ Approval**.
-- Linear `MQ-*`; propor antes de criar issues novas.
+- Linear `MER-*`; propor antes de criar issues novas.
 - Sem hooks Cursor.
 
 ## Saída

@@ -6,7 +6,7 @@ Skill: `merge-quest-decomposition` + `merge-quest-docs` · **Nunca implementa pr
 
 - Escrever/atualizar specs, ADRs, RFCs, glossários no **repo**
 - **Propor** issues/labels/projects Linear (proposal + preview MCP)
-- Garantir links sessão ↔ `MQ-*` ↔ docs
+- Garantir links sessão ↔ `MER-*` ↔ docs
 - **Não** manter `docs/backlog/` canônico
 
 ## Fluxo Linear

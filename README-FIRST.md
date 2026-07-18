@@ -7,7 +7,7 @@ Este pacote orienta qualquer ferramenta (Cursor, Codex, Claude Code) a trabalhar
 1. Leia `AGENTS.md`.
 2. Leia `agent.md` e `docs/agents/README.md` (committee, Challenger, trilhas).
 3. Leia `docs/agents/mcp-setup.md` e autentique Linear MCP se for usar backlog.
-4. Use Linear (`MQ-*`) como SoT de issues; não invente `docs/backlog/` paralelo.
+4. Use Linear (`MER-*`) como SoT de issues; não invente `docs/backlog/` paralelo.
 5. Para produto/arquitetura: `PROJECT-MAP.md`, docs numerados, ADRs.
 6. Vertical slice: `docs/product/09-vertical-slice-and-acceptance.md`.
 7. Não reinstale o monorepo nem “primeira missão de árvore” sem pedido explícito.

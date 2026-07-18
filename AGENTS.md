@@ -14,7 +14,7 @@ Ajudar a equipe a construir o Merge Quest com:
 - pixel art consistente;
 - integração segura entre React, Phaser, API, banco e IA;
 - documentação atualizada;
-- tarefas rastreáveis no Linear (`MQ-*`);
+- tarefas rastreáveis no Linear (`MER-*`);
 - workflow multi-agente agnóstico de tool (`agent.md`, `docs/agents/`).
 
 ## Regra zero
@@ -51,7 +51,7 @@ Antes de qualquer mudança relevante:
 O bootstrap do monorepo já foi feito. A missão atual dos agentes é:
 
 1. seguir o committee em `agent.md` + `docs/agents/workflow.md` (trilhas Full / Light / Asset-Content);
-2. usar Linear como SoT de issues (`MQ-*`); repo como SoT de specs/ADR/sessões;
+2. usar Linear como SoT de issues (`MER-*`); repo como SoT de specs/ADR/sessões;
 3. propor mudanças no Linear antes de criar (MCP ou UI);
 4. não re-scaffolding a árvore sem pedido explícito;
 5. implementar vertical slice com TDD e fronteiras de `game-core`.
@@ -144,7 +144,7 @@ A IA interpreta, contextualiza e redige. A IA não pode:
 
 - `main` protegida;
 - branch curta por issue;
-- padrão `tipo/MQ-123-descricao` (Linear);
+- padrão `tipo/MER-123-descricao` (Linear);
 - PR obrigatório;
 - squash merge;
 - commits convencionais;

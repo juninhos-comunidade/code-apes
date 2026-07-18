@@ -2,7 +2,7 @@
 
 **Trilha:**  
 **Fase final:** conclusion  
-**linearIssues:** MQ-…
+**linearIssues:** MER-…
 
 ## Resumo
 

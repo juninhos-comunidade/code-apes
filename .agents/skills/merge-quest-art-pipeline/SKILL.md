@@ -48,7 +48,7 @@ Conteúdo de catálogo técnico (perguntas/rubricas) é **`merge-quest-content`*
 - validation output;
 - notes;
 - production cost;
-- approval request (artefato; Linear `MQ-*` se houver issue).
+- approval request (artefato; Linear `MER-*` se houver issue).
 
 ## Processo
 

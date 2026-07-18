@@ -3,7 +3,7 @@
 **Trilha:** Full | Light | Asset-Content  
 **Data:** YYYY-MM-DD  
 **Solicitante:**  
-**linearIssues (conhecidas):** MQ-…
+**linearIssues (conhecidas):** MER-…
 
 ## Pedido (resumo)
 

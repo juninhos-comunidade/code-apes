@@ -21,7 +21,7 @@ Perguntas, rubricas, competências, textos versionados — conteúdo **revisáve
 
 ## Entrada
 
-Approval de domínio + `[mq:content]` + issue `MQ-*` quando houver.
+Approval de domínio + `[mq:content]` + issue `MER-*` quando houver.
 
 ## Skills
 

@@ -20,7 +20,7 @@ Cerimônia **graduada** para time pequeno. Escolhida no Helper e registrada em `
 
 - [ ] brief com `[FATO]`/`[DECISÃO]` e trilha Full
 - [ ] spec/ADR necessários no repo
-- [ ] issues `MQ-*` propostas/aprovadas
+- [ ] issues `MER-*` propostas/aprovadas
 - [ ] plan com `[mq:…]` e deps
 - [ ] challenge.md com veredito
 - [ ] approvals/ antes do Team

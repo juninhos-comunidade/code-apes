@@ -59,7 +59,7 @@ Use junto com **`merge-quest-reviewer`** (eixo CODE). Este skill ataca **evidên
 
 - Rodar após Team, sob Reviewer — **não** substitui Challenger.
 - **Chat ≠ Approval** de arquitetura; bloqueio vai no review.
-- Citar `MQ-*` / aceite do plan quando falhar fidelidade de escopo.
+- Citar `MER-*` / aceite do plan quando falhar fidelidade de escopo.
 - Sem Cursor hooks obrigatórios.
 
 ## Output

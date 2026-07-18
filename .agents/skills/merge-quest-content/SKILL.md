@@ -39,7 +39,7 @@ IA **não** pode:
 ## Processo
 
 - **Chat ≠ Approval** (nem para “pode publicar”).
-- Linear SoT `MQ-*`; propose → create.
+- Linear SoT `MER-*`; propose → create.
 - Sem hooks Cursor.
 
 ## Saída

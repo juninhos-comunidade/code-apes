@@ -33,7 +33,7 @@ description: Implement Merge Quest Phaser runtime adapters that present game-cor
 ## Regras duras
 
 - Approval de plano obrigatória (não chat).
-- Linear `MQ-*` citado.
+- Linear `MER-*` citado.
 - IA não inventa conteúdo técnico na cena.
 - Sem hooks Cursor.
 

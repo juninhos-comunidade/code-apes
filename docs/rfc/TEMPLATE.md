@@ -3,7 +3,7 @@
 - **Status:** Rascunho | Em discussão | Aceita | Rejeitada | Arquivada
 - **Data:** YYYY-MM-DD
 - **Autores:**
-- **Linear:** MQ-?
+- **Linear:** MER-?
 
 ## Problema
 
