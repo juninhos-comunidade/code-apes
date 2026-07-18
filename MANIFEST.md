@@ -1,39 +1,39 @@
 # Manifesto do pacote
 
-- `.agents/skills/merge-quest-architecture-guard/SKILL.md` — 1151 bytes
-- `.agents/skills/merge-quest-art-pipeline/SKILL.md` — 992 bytes
-- `.agents/skills/merge-quest-bootstrap/SKILL.md` — 1050 bytes
-- `AGENTS.md` — 4736 bytes
-- `MERGE-QUEST-CONTEXTO-COMPLETO.md` — 42454 bytes
-- `PLANS.md` — 841 bytes
+Gerado em 2026-07-18 — inventário parcial dos artefatos canônicos.
+
+- `AGENTS.md` — 5416 bytes
+- `agent.md` — 4467 bytes
+- `README-FIRST.md` — 1432 bytes
 - `PROJECT-MAP.md` — 2951 bytes
-- `PROMPT-CODEX-FIRST-RUN.md` — 1252 bytes
-- `README-FIRST.md` — 2149 bytes
-- `TREE-PROPOSAL.md` — 1461 bytes
-- `apps/AGENTS.md` — 328 bytes
-- `art/AGENTS.md` — 238 bytes
-- `assets/reference/prototipo-visual-aprovado.png` — 2162958 bytes
-- `docs/architecture/06-monorepo-and-repository-architecture.md` — 2669 bytes
-- `docs/architecture/14-decisions-and-open-questions.md` — 1127 bytes
-- `docs/architecture/adr/ADR-0001-monorepo.md` — 455 bytes
-- `docs/architecture/adr/ADR-0002-game-core-source-of-truth.md` — 308 bytes
-- `docs/architecture/adr/ADR-0003-ai-does-not-invent.md` — 323 bytes
-- `docs/design/05-visual-design-and-asset-rules.md` — 1728 bytes
-- `docs/design/13-codex-aseprite-pipeline.md` — 1065 bytes
-- `docs/engineering/07-poo-tdd-layered-architecture.md` — 5505 bytes
-- `docs/engineering/08-data-contracts-and-schemas.md` — 1969 bytes
-- `docs/history/art-references.md` — 7849 bytes
-- `docs/history/briefing-kickoff.md` — 10000 bytes
-- `docs/history/decision-log-v7.8.md` — 284571 bytes
-- `docs/history/handoff.md` — 16468 bytes
+- `docs/skills-map.md` — 2862 bytes
+- `docs/architecture/adr/ADR-0006-agent-workflow-committee.md` — 2864 bytes
+- `docs/specs/agent-workflow-committee.spec.md` — 5797 bytes
+- `docs/agents/README.md` — 2593 bytes
+- `docs/agents/workflow.md` — 3141 bytes
+- `docs/agents/mcp-setup.md` — 2796 bytes
+- `docs/agents/mcp-linear-evaluation.md` — 2078 bytes
 - `docs/linear/12-linear-bootstrap.md` — 1413 bytes
-- `docs/product/01-product-vision-and-scope.md` — 1334 bytes
-- `docs/product/02-functional-and-nonfunctional-requirements.md` — 3839 bytes
-- `docs/product/03-game-design.md` — 2542 bytes
-- `docs/product/04-ai-assessment-and-content.md` — 1588 bytes
-- `docs/product/09-vertical-slice-and-acceptance.md` — 1490 bytes
-- `docs/product/10-team-responsibilities.md` — 999 bytes
-- `docs/product/11-roadmap-risks-and-definition-of-done.md` — 1239 bytes
-- `packages/game-core/AGENTS.md` — 206 bytes
-- `sources/carta-magna-v1.5.pdf` — 1729537 bytes
-- `sources/torre-da-vaga-requisitos.pdf` — 134867 bytes
+- `docs/linear/2026-07-18-workspace-audit.md` — 1627 bytes
+- `docs/rfc/README.md` — 438 bytes
+
+## Skills (.agents/skills)
+- `.agents/skills/merge-quest-api/SKILL.md` — 1596 bytes
+- `.agents/skills/merge-quest-architecture-guard/SKILL.md` — 2204 bytes
+- `.agents/skills/merge-quest-art-pipeline/SKILL.md` — 2142 bytes
+- `.agents/skills/merge-quest-bootstrap/SKILL.md` — 2156 bytes
+- `.agents/skills/merge-quest-challenger/SKILL.md` — 1924 bytes
+- `.agents/skills/merge-quest-concluidor/SKILL.md` — 1565 bytes
+- `.agents/skills/merge-quest-content/SKILL.md` — 1624 bytes
+- `.agents/skills/merge-quest-decomposition/SKILL.md` — 1864 bytes
+- `.agents/skills/merge-quest-delivery-gate/SKILL.md` — 1899 bytes
+- `.agents/skills/merge-quest-docs/SKILL.md` — 1653 bytes
+- `.agents/skills/merge-quest-game-core/SKILL.md` — 1507 bytes
+- `.agents/skills/merge-quest-helper/SKILL.md` — 1963 bytes
+- `.agents/skills/merge-quest-learned-practices/SKILL.md` — 2306 bytes
+- `.agents/skills/merge-quest-linear/SKILL.md` — 1731 bytes
+- `.agents/skills/merge-quest-mcp-setup/SKILL.md` — 1801 bytes
+- `.agents/skills/merge-quest-orchestrator/SKILL.md` — 1854 bytes
+- `.agents/skills/merge-quest-reviewer/SKILL.md` — 1882 bytes
+- `.agents/skills/merge-quest-runtime/SKILL.md` — 1443 bytes
+- `.agents/skills/merge-quest-web/SKILL.md` — 1423 bytes

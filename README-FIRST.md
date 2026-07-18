@@ -1,70 +1,37 @@
-# Merge Quest — contexto canônico para Codex
+# Merge Quest — contexto canônico para agentes
 
-Este pacote existe para o Codex **entender o projeto, propor a árvore do monorepo e preparar a organização do trabalho**.
+Este pacote orienta qualquer ferramenta (Cursor, Codex, Claude Code) a trabalhar no repositório com o mesmo contrato.
 
-## Primeira missão
+## Missão atual
 
 1. Leia `AGENTS.md`.
-2. Leia `PROJECT-MAP.md`.
-3. Leia `docs/architecture/06-monorepo-and-repository-architecture.md`.
-4. Leia `docs/engineering/07-poo-tdd-layered-architecture.md`.
-5. Leia `docs/product/09-vertical-slice-and-acceptance.md`.
-6. Leia `docs/linear/12-linear-bootstrap.md`.
-7. Inspecione o diretório atual.
-8. Proponha a árvore final do repositório.
-9. Explique cada diretório e fronteira.
-10. Aguarde aprovação antes de instalar dependências ou implementar o jogo.
+2. Leia `agent.md` e `docs/agents/README.md` (committee, Challenger, trilhas).
+3. Leia `docs/agents/mcp-setup.md` e autentique Linear MCP se for usar backlog.
+4. Use Linear (`MQ-*`) como SoT de issues; não invente `docs/backlog/` paralelo.
+5. Para produto/arquitetura: `PROJECT-MAP.md`, docs numerados, ADRs.
+6. Vertical slice: `docs/product/09-vertical-slice-and-acceptance.md`.
+7. Não reinstale o monorepo nem “primeira missão de árvore” sem pedido explícito.
 
-## Ordem obrigatória
+## Ordem de leitura (produto / código)
 
-### Fase A — árvore e documentação
-
-- criar a árvore do monorepo;
-- copiar estes documentos para os locais corretos;
-- criar arquivos vazios ou placeholders;
-- criar `package.json`, `pnpm-workspace.yaml` e `turbo.json` somente após mostrar a proposta;
-- não instalar frameworks ainda;
-- não escrever funcionalidades.
-
-### Fase B — revisão da árvore
-
-- executar uma auditoria da estrutura;
-- verificar conflitos de responsabilidade;
-- identificar decisões ainda abertas;
-- gerar um relatório em `docs/repository-bootstrap-report.md`;
-- aguardar aprovação do usuário.
-
-### Fase C — Linear
-
-Somente após a árvore ser aprovada:
-
-- propor a estrutura do Linear;
-- aguardar aprovação;
-- criar projetos, milestones, labels, issues e dependências;
-- não iniciar implementação automaticamente.
-
-## Fontes principais
-
-- `PROJECT-MAP.md`: visão canônica resumida.
-- `MERGE-QUEST-CONTEXTO-COMPLETO.md`: versão única e longa para leitura linear.
-- `docs/history/decision-log-v7.8.md`: histórico completo das decisões.
-- `sources/carta-magna-v1.5.pdf`: documento de apresentação.
-- `assets/reference/prototipo-visual-aprovado.png`: referência visual aprovada.
+1. `AGENTS.md` + `agent.md`
+2. `docs/architecture/adr/README.md` (especialmente ADR-0002, ADR-0003, ADR-0006)
+3. `docs/engineering/07-poo-tdd-layered-architecture.md`
+4. `docs/product/09-vertical-slice-and-acceptance.md`
+5. `docs/linear/12-linear-bootstrap.md` + audit mais recente em `docs/linear/`
 
 ## Instalação
 
-Consulte `REQUIREMENTS.md` para os pré-requisitos e o comando único de instalação do monorepo.
-
-Consulte também `CONTRIBUTING.md` para o fluxo de colaboração e `docs/reproducibility-audit-report.md` para a prova de instalação limpa e os bloqueios restantes.
+Consulte `REQUIREMENTS.md` e `CONTRIBUTING.md`.
 
 ## Regra de precedência
 
 Quando houver conflito:
 
-1. `AGENTS.md`;
+1. `AGENTS.md` + `agent.md` + `docs/agents/` (processo);
 2. documentos canônicos numerados;
 3. ADRs;
 4. `PROJECT-MAP.md`;
-5. histórico e fontes antigas.
+5. histórico e fontes antigas (`docs/history/`, `sources/*.pdf`).
 
-Não use uma decisão antiga quando um documento canônico disser que ela foi substituída.
+Não use uma decisão antiga quando um documento canônico ou ADR disser que ela foi substituída.

@@ -14,7 +14,8 @@ Ajudar a equipe a construir o Merge Quest com:
 - pixel art consistente;
 - integração segura entre React, Phaser, API, banco e IA;
 - documentação atualizada;
-- tarefas rastreáveis no Linear.
+- tarefas rastreáveis no Linear (`MQ-*`);
+- workflow multi-agente agnóstico de tool (`agent.md`, `docs/agents/`).
 
 ## Regra zero
 
@@ -27,6 +28,8 @@ Antes de qualquer mudança relevante:
 3. liste arquivos que pretende criar ou alterar;
 4. identifique riscos e dependências;
 5. aguarde aprovação quando a ação for destrutiva, externa ou ampliar escopo.
+
+**Chat ≠ Approval.** Pedido ou preferência no chat é hipótese (`[FATO]` / `[DECISÃO]`). Só artefato de Approval em sessão (`docs/agents/sessions/`) avança fase. Plano e preferências humanas são sempre revisáveis (Helper + Challenger).
 
 ## Ações que exigem confirmação
 
@@ -43,14 +46,17 @@ Antes de qualquer mudança relevante:
 - usar serviços pagos;
 - enviar dados a serviços externos.
 
-## Primeira missão do repositório
+## Missão atual do repositório
 
-1. propor a árvore;
-2. criar apenas scaffolding e documentação;
-3. auditar a estrutura;
-4. aguardar aprovação;
-5. somente depois preparar o Linear;
-6. não iniciar funcionalidades.
+O bootstrap do monorepo já foi feito. A missão atual dos agentes é:
+
+1. seguir o committee em `agent.md` + `docs/agents/workflow.md` (trilhas Full / Light / Asset-Content);
+2. usar Linear como SoT de issues (`MQ-*`); repo como SoT de specs/ADR/sessões;
+3. propor mudanças no Linear antes de criar (MCP ou UI);
+4. não re-scaffolding a árvore sem pedido explícito;
+5. implementar vertical slice com TDD e fronteiras de `game-core`.
+
+Skill de bootstrap (`merge-quest-bootstrap`) só para reorg/scaffold — não é o ciclo padrão.
 
 ## Arquitetura obrigatória
 
@@ -138,7 +144,7 @@ A IA interpreta, contextualiza e redige. A IA não pode:
 
 - `main` protegida;
 - branch curta por issue;
-- padrão `tipo/MQ-123-descricao`;
+- padrão `tipo/MQ-123-descricao` (Linear);
 - PR obrigatório;
 - squash merge;
 - commits convencionais;
