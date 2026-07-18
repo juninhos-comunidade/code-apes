@@ -2,31 +2,39 @@
 
 Skill: `merge-quest-game-core` · **Implementa** regras determinísticas.
 
-## Escopo
+## Owner Linear
 
-`packages/game-core` (e testes associados): estado, comandos, eventos, combate, veredito.
-
-## Regras
-
-- Pure TypeScript; sem React, Phaser, DOM, network, DB, SDK de IA
-- TDD obrigatório (RED → GREEN → REFACTOR)
-- Invariantes em entidades; VOs imutáveis
-- Replayável / testável sem browser
-
-## Nunca
-
-- Colocar regra em cena Phaser ou componente React
-- Aceitar “a IA decide o dano”
-- Expandir API pública sem contrato/spec
+**Eduardo** (issues MER-9, MER-21–23 e fatias `[mq:game-core]`).
 
 ## Entrada
 
-Approval + fatia `[mq:game-core]` + critérios `MER-*` / spec.
+Approval + tag `[mq:game-core]` + critérios `MER-*`.
 
-## Saída
+## Escopo
 
-Código + testes · atualizar `pendingTeamTasks` · reportar evidências ao Reviewer.
+Centro estável do domínio: entidades, VOs, combate, progressão, Confiança, veredito.
+
+Motor: `execute(state, command) → { state, events }` — TypeScript determinístico e testável.
+
+## Fronteiras (camadas)
+
+- **Proibido:** React, Phaser, DOM, DB, SDK de IA, HTTP.
+- Apresentação e infra só consomem API pública do core.
+- Trocar renderer/LLM **não** exige mudar game-core (tabela de isolamento).
+
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| game-core | Reviewer | testes RED→GREEN + typecheck; superfície tipada |
+| game-core | runtime/web | comandos/eventos estáveis documentados |
+
+## Nunca
+
+- Colocar I/O ou framework no pacote
+- Decidir visual/animação como regra
+- Expandir escopo sem Approval
 
 ## Skills
 
-`merge-quest-game-core`, `merge-quest-architecture-guard`, `vitest-skill`, `typescript-pro`.
+`merge-quest-game-core`, TDD (mattpocock/obra), `typescript-pro`, `vitest-skill`, `merge-quest-architecture-guard`.

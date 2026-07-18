@@ -15,7 +15,8 @@ Ajudar a equipe a construir o Merge Quest com:
 - integração segura entre React, Phaser, API, banco e IA;
 - documentação atualizada;
 - tarefas rastreáveis no Linear (`MER-*`);
-- workflow multi-agente agnóstico de tool (`agent.md`, `docs/agents/`).
+- workflow multi-agente agnóstico de tool (`agent.md`, `docs/agents/`);
+- skills do projeto em `.agents/skills/` (mapa: `docs/skills-map.md`, conjuntos: `docs/agents/skill-sets.md`).
 
 ## Regra zero
 

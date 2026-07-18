@@ -37,7 +37,7 @@ TDD ocorre *dentro* da implementação — não é fluxo paralelo.
 | 5 | **REFATORAÇÃO** | Limpar com testes verdes | — | Team |
 | 6 | **VALIDAÇÃO** | Critérios Linear/spec (não só testes) | Review eixo spec | Reviewer |
 | 6b | **REVISÃO CÓDIGO** | Arquitetura, fronteiras, TDD, arte/conteúdo | Review eixo code | Reviewer |
-| 7 | **FECHAMENTO** | Conclusão, learnings, propor update Linear/PR | Concluidor propõe; humano aprova mutações externas | Concluidor |
+| 7 | **FECHAMENTO** | Conclusão, **Learnings disposition**, propor update Linear/PR | Concluidor propõe; humano aprova mutações externas | Concluidor |
 
 **Bugfix / chore locais (trilha Light):** podem enxugar SPEC e Challenger; **nunca** pulam teste quando há lógica corrigível, nem Approval em arquivo.
 
@@ -65,12 +65,14 @@ Detalhe: [`docs/agents/tracks.md`](docs/agents/tracks.md).
 6. **Linear: propose → Approval → mutate** via MCP (ou UI/proposal file se MCP cair).
 7. **Tags** — Orchestrator marca fatias com `[mq:<área>]` (`game-core`, `runtime`, `web`, `api`, `content`, `art`, `qa`, …).
 8. **Sem micro-aprovações** após Approval do plano — executar autonomamente; interromper só para ações sensíveis (commit, push, PR, deploy, segredos, Linear mutate, escopo).
+9. **Feedback loop** — conclusion com disposition (`practice` \| `promote-to-skill` \| `promote-to-ADR` \| `discard`); Helper lê Practices recentes; changelog em [`docs/agents/CHANGELOG.md`](docs/agents/CHANGELOG.md).
+10. **Swarm** — permitido como tática do Orchestrator (fatias paralelas); não substitui committee.
 
 ---
 
 ## Skills
 
-Consultar [`docs/skills-map.md`](docs/skills-map.md) e [`docs/agents/skill-sets.md`](docs/agents/skill-sets.md). Skills não substituem spec, Approval nem testes.
+Consultar [`docs/skills-map.md`](docs/skills-map.md) e [`docs/agents/skill-sets.md`](docs/agents/skill-sets.md). In-repo: `.agents/skills/merge-quest-*`. Skills não substituem spec, Approval nem testes.
 
 ---
 

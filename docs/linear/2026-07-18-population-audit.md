@@ -36,9 +36,10 @@
 
 ## Gaps / ações humanas
 
-1. Criar Initiative na UI e vincular 10 projects
-2. Convidar **Hahn** ao workspace (assignee hoje placeholder Gui em issues de API)
-3. PR do harness de agentes (MER-5)
+1. Criar Initiative na UI e vincular 10 projects (MER-32)
+2. Convidar **Hahn** ao workspace — API issues MER-12/25/26/30 ficam **unassigned** + comment blocked
+3. PR do harness de agentes (MER-5 / PR #1)
+4. Ownership 2026-07-18: game-core MER-9/21–23 → Eduardo; Design Book MER-10 co-owners Eduardo+Guilherme
 
 ## Smoke MCP
 

@@ -23,6 +23,7 @@ description: Capture and apply repeatable Merge Quest process/product practices 
 2. Em planos/specs: citar arquivos, verify profile, aceite `MER-*`, QG.
 3. Se correção humana repetida → acrescentar **uma** linha em Practices (data + check).
 4. Preferir atualizar doc/ADR/standard a crescer esta lista sem limite (manter ≤30).
+5. Se disposition do Concluidor for `promote-to-skill` / `promote-to-ADR` → não duplicar aqui; linkar proposal e remover da lista ao promover.
 
 ## Practices (living)
 
@@ -37,6 +38,10 @@ description: Capture and apply repeatable Merge Quest process/product practices 
 | 2026-07-18 | Trilhas Full / Light / Asset-Content | `docs/agents/tracks.md` citado no brief |
 | 2026-07-18 | Tags `[mq:<area>]` em tasks Team | plan lista áreas |
 | 2026-07-18 | Bootstrap skill só para reorg/scaffold | não usar no ciclo de feature |
+| 2026-07-18 | Learnings disposition no conclusion | `practice\|promote-to-skill\|promote-to-ADR\|discard` |
+| 2026-07-18 | Swarm só como tática sob Orchestrator | plan lista waves; committee permanece SoT |
+| 2026-07-18 | Dry-runs devem ter approvals/ + reviews/ | sessão dry-run Full/Light/Asset |
+| 2026-07-18 | `npx skills add -g` pode falhar PromptScript; copy `~/.agents/skills` ok | skills-map inventário |
 
 ## Pontos de falha comuns
 

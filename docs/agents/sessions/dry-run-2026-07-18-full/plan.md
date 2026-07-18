@@ -6,9 +6,8 @@ Entregar docs/agents + skills + Linear bootstrap sem código de produto.
 
 ## Roster `[mq:*]`
 
-- [mq:documentation] contrato Linear + propostas
-- [mq:orchestrator] este plan
-- [mq:challenger] challenge.md
+- `[mq:docs]` contrato Linear + propostas
+- `[mq:process]` este plan + challenge + conclusion
 - (Team de produto não acionado — dry-run)
 
 ## pendingTeamTasks

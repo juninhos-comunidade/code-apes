@@ -17,23 +17,6 @@ Gerado em 2026-07-18 — inventário parcial dos artefatos canônicos.
 - `docs/linear/2026-07-18-workspace-audit.md` — 1627 bytes
 - `docs/rfc/README.md` — 438 bytes
 
-## Skills (.agents/skills)
-- `.agents/skills/merge-quest-api/SKILL.md` — 1596 bytes
-- `.agents/skills/merge-quest-architecture-guard/SKILL.md` — 2204 bytes
-- `.agents/skills/merge-quest-art-pipeline/SKILL.md` — 2142 bytes
-- `.agents/skills/merge-quest-bootstrap/SKILL.md` — 2156 bytes
-- `.agents/skills/merge-quest-challenger/SKILL.md` — 1924 bytes
-- `.agents/skills/merge-quest-concluidor/SKILL.md` — 1565 bytes
-- `.agents/skills/merge-quest-content/SKILL.md` — 1624 bytes
-- `.agents/skills/merge-quest-decomposition/SKILL.md` — 1864 bytes
-- `.agents/skills/merge-quest-delivery-gate/SKILL.md` — 1899 bytes
-- `.agents/skills/merge-quest-docs/SKILL.md` — 1653 bytes
-- `.agents/skills/merge-quest-game-core/SKILL.md` — 1507 bytes
-- `.agents/skills/merge-quest-helper/SKILL.md` — 1963 bytes
-- `.agents/skills/merge-quest-learned-practices/SKILL.md` — 2306 bytes
-- `.agents/skills/merge-quest-linear/SKILL.md` — 1731 bytes
-- `.agents/skills/merge-quest-mcp-setup/SKILL.md` — 1801 bytes
-- `.agents/skills/merge-quest-orchestrator/SKILL.md` — 1854 bytes
-- `.agents/skills/merge-quest-reviewer/SKILL.md` — 1882 bytes
-- `.agents/skills/merge-quest-runtime/SKILL.md` — 1443 bytes
-- `.agents/skills/merge-quest-web/SKILL.md` — 1423 bytes
+## Skills (.agents/skills) — 20 merge-quest-*
+
+Inclui `merge-quest-qa`. Mapa: `docs/skills-map.md`. Changelog processo: `docs/agents/CHANGELOG.md`.

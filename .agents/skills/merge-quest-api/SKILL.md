@@ -5,6 +5,10 @@ description: Implement Merge Quest API application/infrastructure behind contrac
 
 # Team — api
 
+## Owner
+
+Linear: **Hahn** (quando no workspace). Até lá: unassigned + blocked comment. Ports/adapters; Zod na boundary; IA via gateway.
+
 ## Quando usar
 
 - task `[mq:api]`;

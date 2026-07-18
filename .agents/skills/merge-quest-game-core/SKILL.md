@@ -5,6 +5,10 @@ description: Implement deterministic Merge Quest game rules and state in package
 
 # Team — game-core
 
+## Owner
+
+Linear: **Eduardo**. Pacote: domínio puro `execute(state, command) → { state, events }`.
+
 ## Quando usar
 
 - task `[mq:game-core]` com plan + Approval;

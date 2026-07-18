@@ -1,27 +1,41 @@
 # Harness — Team runtime
 
-Skill: `merge-quest-runtime` · **Implementa** adaptação Phaser.
+Skill: `merge-quest-runtime` · **Implementa** adaptadores Phaser.
 
-## Escopo
+## Owner Linear
 
-`game-runtime` / cenas Phaser: render, input, animação, wiring para comandos do `game-core`.
-
-## Regras
-
-- Animação **não** muda resultado
-- Cenas não possuem regra central de avaliação
-- Pode depender de Phaser + `game-core`; não inverter dependência
-
-## Nunca
-
-- Duplicar regra de combate no runtime
-- Antialiasing / resolução fora do Design Book
-- Importar API/DB/SDK de IA no runtime sem porta explícita aprovada
+**Eduardo** (Phaser, exploração, combate visual, sprites/animações).
 
 ## Entrada
 
-Approval + `[mq:runtime]` + critérios.
+Approval + `[mq:runtime]` (+ Design Book se visual).
+
+## Escopo
+
+Cenas, input, câmera, animações, projeção de eventos do core (`DamageDealt`, etc.).
+
+Fluxo típico: input Phaser → `command` → `game-core` → eventos → projeção visual.
+
+## Fronteiras
+
+- Pode depender de Phaser + `game-core`.
+- **Não** é fonte de verdade de estado/regra.
+- Skills Phaser externas: só setup/config/objetos — **nunca** regra de combate na cena.
+- Sem antialiasing; 480×270; escala inteira.
+
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| runtime | Reviewer | sync core↔cena documentada; sem regra na cena |
+| runtime | web | eventos tipados React↔Phaser (contrato) |
+
+## Nunca
+
+- Calcular dano/veredito na cena
+- Importar DB/SDK IA
+- Sobrescrever asset `approved`
 
 ## Skills
 
-`merge-quest-runtime`, `merge-quest-architecture-guard`, `merge-quest-art-pipeline` (consulta visual).
+`merge-quest-runtime`, `merge-quest-architecture-guard`, `phaserjs/*` (com ressalva), `merge-quest-art-pipeline` (consulta visual).

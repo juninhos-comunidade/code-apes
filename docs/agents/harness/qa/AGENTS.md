@@ -1,16 +1,28 @@
 # Harness — Team qa
 
-Skill: apoio `merge-quest-delivery-gate` + testes · **Implementa** verificação.
+Skill: `merge-quest-qa` (+ `merge-quest-delivery-gate`) · **Implementa** verificação.
+
+## Entrada
+
+Approval + tag `[mq:qa]` (ou suporte explícito a outra fatia).
 
 ## Escopo
 
-Planos de teste, E2E/smoke, a11y, telemetria de QA, reprodução de bugs, gates de entrega.
+Planos de teste, E2E/smoke, a11y, telemetria de QA, reprodução de bugs, gates de entrega, builds reprodutíveis.
 
 ## Regras
 
 - Evidência > opinião
 - Preferir testes automatizados no escopo
 - Reportar gaps sem bloquear indevidamente Light chores documentados
+- Não mover regra de jogo para adaptadores
+
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| QA | Reviewer | Comandos + resultados anexáveis |
+| QA | Team domínio | Falha atribuível pedindo fix |
 
 ## Nunca
 
@@ -18,10 +30,6 @@ Planos de teste, E2E/smoke, a11y, telemetria de QA, reprodução de bugs, gates 
 - Aprovar produto no lugar do Reviewer
 - Ignorar critérios da issue Linear
 
-## Entrada
-
-Approval + `[mq:qa]` ou suporte a outra fatia.
-
 ## Skills
 
-`merge-quest-delivery-gate`, `vitest-skill`, `playwright` (quando aplicável), a11y skills.
+`merge-quest-qa`, `merge-quest-delivery-gate`, `vitest-skill` / vitest externa, playwright, a11y skills.

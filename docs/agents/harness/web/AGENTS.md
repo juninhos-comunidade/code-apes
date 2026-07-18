@@ -2,25 +2,38 @@
 
 Skill: `merge-quest-web` · **Implementa** shell React.
 
-## Escopo
+## Owner Linear
 
-`apps/web`: rotas, layout, HUD DOM, montagem Phaser, adaptadores de UI.
-
-## Regras
-
-- React não avalia combate/competência
-- Depende de UI, contratos e adaptadores — não de detalhes internos de pacotes
-- Acessibilidade básica em fluxos tocados
-
-## Nunca
-
-- Esconder regra de negócio em hooks de UI
-- Quebrar contrato compartilhado sem fatia api/docs
+**Guilherme** (React, Design System, UX, IA UX, relatório, deploy frontend).
 
 ## Entrada
 
-Approval + `[mq:web]` + critérios.
+Approval + `[mq:web]` + contratos.
+
+## Escopo
+
+Shell, rotas, formulários, overlays, HUD DOM, montagem Phaser, superfícies de IA (interpretação/contexto).
+
+## Fronteiras
+
+- UI/forms/overlays — **não** calculam combate nem veredito.
+- Consome contratos versionados; chama API (não DB direto).
+- Phaser montado no app; estado de jogo via core/runtime.
+- Design Book / tokens: co-ownership com arte quando visual.
+
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| web | Reviewer | fluxos + loading/error; sem regra de avaliação |
+| web | api | DTOs/erros alinhados |
+
+## Nunca
+
+- Inventar catálogo/pergunta (ADR-0003)
+- Regra de combate no componente
+- Mutar Linear sem Approval
 
 ## Skills
 
-`merge-quest-web`, padrões frontend do repo, a11y quando aplicável.
+`merge-quest-web`, `vercel-react-best-practices`, `web-design-guidelines`, `frontend-*`, `merge-quest-architecture-guard`.

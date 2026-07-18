@@ -29,7 +29,8 @@ description: Assemble Merge Quest plans, tags [mq:area], Linear issue IDs, and t
 5. Incorporar achados ou registrar descarte justificado.
 6. Pedir **Approval explícita** (artefato `templates/approval.md`) — **chat não conta**.
 7. Só então `phase` → `team` e despachar Team por área (harness de domínio).
-8. Quando tasks da sessão estiverem vazias: declarar **“aciona o Reviewer”** (sem hooks).
+8. **Swarm orquestrado (opcional):** listar fatias paralelas em `pendingTeamTasks` com tags válidas; saídas em arquivos de sessão. Não substitui Challenger/Approval/Reviewer.
+9. Quando tasks da sessão estiverem vazias: declarar **“aciona o Reviewer”** (sem hooks).
 
 ## Regras duras
 
@@ -38,6 +39,7 @@ description: Assemble Merge Quest plans, tags [mq:area], Linear issue IDs, and t
 - Linear SoT: plano cita `MER-*`; não inventar IDs.
 - Sem Cursor hooks — handoff por artefato + mensagem explícita.
 - `game-core` sem React/Phaser/DB; IA não inventa (ADR-0003).
+- Não instalar skill multi-agent genérica como SoT de processo.
 
 ## Saída
 

@@ -5,6 +5,10 @@ description: Implement Merge Quest Phaser runtime adapters that present game-cor
 
 # Team — runtime (Phaser)
 
+## Owner
+
+Linear: **Eduardo** (apresentação Phaser). Skills Phaser externas só como adaptador — nunca regra na cena.
+
 ## Quando usar
 
 - task `[mq:runtime]` / integração Phaser;

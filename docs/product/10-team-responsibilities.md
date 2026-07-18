@@ -4,12 +4,14 @@
 
 Lidera:
 
+- `game-core` (regras determinísticas / Linear MER-9, 21–23);
 - Phaser;
 - exploração;
 - combate;
 - sprites;
 - animações;
 - assets;
+- Design Book (co-owner com Guilherme);
 - integração visual;
 - E2E;
 - demo;
@@ -39,9 +41,11 @@ Lidera:
 - React;
 - Design System;
 - UX;
+- Design Book (co-owner com Eduardo);
 - IA do ponto de vista de prompt e experiência;
 - relatório;
-- deploy frontend.
+- deploy frontend;
+- workflow de agentes / Linear process (MER-5).
 
 Chamadas de IA passam pela API.
 

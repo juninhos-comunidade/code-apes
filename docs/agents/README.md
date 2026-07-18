@@ -15,6 +15,7 @@
 | [`mcp-linear-evaluation.md`](mcp-linear-evaluation.md) | Veredito smoke Linear MCP |
 | [`skill-sets.md`](skill-sets.md) | Conjuntos de skills |
 | [`../skills-map.md`](../skills-map.md) | Mapa por etapa/área |
+| [`CHANGELOG.md`](CHANGELOG.md) | Changelog de processo |
 | [`../specs/agent-workflow-committee.spec.md`](../specs/agent-workflow-committee.spec.md) | Contrato normativo |
 | [`../architecture/adr/ADR-0006-agent-workflow-committee.md`](../architecture/adr/ADR-0006-agent-workflow-committee.md) | ADR |
 
@@ -34,7 +35,7 @@
 | Team art | [`harness/art/`](harness/art/AGENTS.md) | Sim |
 | Team qa | [`harness/qa/`](harness/qa/AGENTS.md) | Sim |
 | Reviewer | [`harness/reviewer/`](harness/reviewer/AGENTS.md) | Não |
-| Concluidor | [`harness/concluidor/`](harness/concluidor/AGENTS.md) | Sim (só docs/fecho; não feature) |
+| Concluidor | [`harness/concluidor/`](harness/concluidor/AGENTS.md) | Não (só docs de fecho; não feature) |
 
 ## Fluxo (Full)
 

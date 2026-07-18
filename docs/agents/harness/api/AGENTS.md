@@ -1,28 +1,39 @@
 # Harness — Team api
 
-Skill: `merge-quest-api` · **Implementa** API e infraestrutura atrás de contratos.
+Skill: `merge-quest-api` · **Implementa** aplicação/infra atrás de contratos.
 
-## Escopo
+## Owner Linear
 
-`apps/api` + contratos: HTTP, persistência, gateway de IA, auth conforme ADR.
-
-## Regras
-
-- Controllers sem regra de negócio de jogo
-- IA interpreta/redige; **não** inventa resposta correta nem decide veredito (ADR-0003)
-- Domínio não depende de infra; adaptadores implementam portas
-- Mutar DB compartilhado / serviços pagos: Approval
-
-## Nunca
-
-- Bypass de schema/rubrica
-- Segredos no repo
-- Importar `game-core` rules no lugar errado da camada
+**Hahn** (quando convidado). Até lá: issues API **unassigned** + comment blocked.
 
 ## Entrada
 
-Approval + `[mq:api]` + critérios/contratos.
+Approval + `[mq:api]`; Approval extra para DB compartilhado / serviços pagos.
+
+## Escopo
+
+Use cases (`StartRun`, `SubmitAnswer`, `SaveCheckpoint`, …), portas (`RunRepository`, `AIGateway`, `AuthGateway`), controllers Fastify finos, Zod na boundary, adapters (Drizzle, Supabase Auth, OpenAI SDK).
+
+## Fronteiras
+
+- Controllers sem regra de negócio de jogo.
+- IA só via porta; resposta estruturada validada; core decide recompensas/veredito.
+- Domínio interno sem framework; infra implementa portas.
+- Sandbox de desafios: worker + container descartável (limites CPU/mem/tempo; sem rede) — fora do núcleo do committee docs, mas API orquestra o job.
+
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| api | Reviewer | testes + schemas versionados |
+| api | web | contratos estáveis |
+
+## Nunca
+
+- Mover combate determinístico para a API
+- Inventar catálogo ativo
+- Mutar banco compartilhado sem Approval
 
 ## Skills
 
-`merge-quest-api`, `api-design-principles`, `zod-validation-expert`, `postgres-best-practices`, `fastapi-pro` N/A se stack TS.
+`merge-quest-api`, `zod-validation-expert`, `api-design-principles`, `supabase` / postgres skills, `nodejs-best-practices`, `merge-quest-architecture-guard`.

@@ -1,23 +1,28 @@
 # Conclusion — dry-run Full (2026-07-18)
 
+**Trilha:** Full  
+**linearIssues:** MER-5, MER-6, MER-7
+
+## Resumo
+
+Dry-run documental do committee: ADR-0006, workflow, harnesses, skills, Linear audits.
+
 ## Entregue
 
 - MCP Linear autenticado e avaliado (Go com gaps)
-- Workspace: 10 projects, labels, milestones, issues MER-5…MER-10
+- Workspace: 10 projects, labels, milestones, issues MER-*
 - ADR-0006, spec, agent.md, docs/agents/**, harnesses, templates
-- 19 skills em `.agents/skills/`
+- Skills em `.agents/skills/` (+ `merge-quest-qa` no refinement)
 - skill-sets + skills-map
-- RFC template, ADR index, AGENTS/README-FIRST atualizados
-- grill-me/grilling restaurados em `~/.cursor/skills/` (opcional Helper)
-- Dry-run Full + Light
+- Dry-run Full + Light com artefatos honestos
 
 ## Checklist anti-tool-lock-in
 
 - [x] Nenhum `.cursor/hooks` exigido pelo processo
 - [x] Workflow em markdown no repo
 - [x] MCP Linear documentado com fallback UI/proposal
-- [x] Skills in-repo; externas só no mapa
-- [x] Prefixos/IDs Linear (`MER-*`) no contrato, não amarrados a Cursor
+- [x] Skills in-repo; externas no mapa
+- [x] Prefixos/IDs Linear (`MER-*`) no contrato
 
 ## Checklist anti-dual-backlog
 
@@ -25,8 +30,15 @@
 - [x] Proposals em `docs/linear/proposals/`
 - [x] Issues só no Linear
 
+## Learnings disposition
+
+| Learning | Disposition | Owner | Target |
+|----------|-------------|-------|--------|
+| Dry-runs precisam de approvals/reviews reais | practice | Guilherme | learned-practices |
+| Prefixo Linear é MER-* | practice | Guilherme | naming.md (já) |
+
 ## Próximos (humano / fatias)
 
 - Criar Initiative na UI Linear
 - Autenticar Supabase MCP quando houver projeto
-- Fechar MER-5 após review do PR deste slice
+- Fechar MER-5 após merge do PR #1

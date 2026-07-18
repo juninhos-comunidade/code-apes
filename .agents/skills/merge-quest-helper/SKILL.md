@@ -26,10 +26,11 @@ description: Start every Merge Quest ask with discovery lenses, FATO/DECISÃO la
    - IA não inventa (ADR-0003);
    - Design Book / asset contract (se arte);
    - Linear `MER-*` existente vs proposta nova.
-4. Classificar cada ponto fechado como `[FATO]` (verificável) ou `[DECISÃO]` (precisa humano).
-5. Escrever `docs/agents/sessions/<id>/brief.md` a partir de `docs/agents/templates/brief.md`.
-6. Atualizar `phase.md` → `helper`; após Approval do brief → `decomposition`.
-7. Passar para Documentação (`merge-quest-decomposition` / `merge-quest-docs`).
+4. Ler `merge-quest-learned-practices` (Practices recentes) e skim de `docs/agents/CHANGELOG.md` se houver entradas novas.
+5. Classificar cada ponto fechado como `[FATO]` (verificável) ou `[DECISÃO]` (precisa humano).
+6. Escrever `docs/agents/sessions/<id>/brief.md` a partir de `docs/agents/templates/brief.md`.
+7. Atualizar `phase.md` → `helper`; após Approval do brief → `decomposition`.
+8. Passar para Documentação (`merge-quest-decomposition` / `merge-quest-docs`).
 
 ## Regras duras
 

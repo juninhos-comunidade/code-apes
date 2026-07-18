@@ -5,6 +5,10 @@ description: Implement Merge Quest React shell (apps/web) — UX flows, Design S
 
 # Team — web (React)
 
+## Owner
+
+Linear: **Guilherme**. Overlays/forms sem cálculo de combate; Design Book visual em co-ownership com arte.
+
 ## Quando usar
 
 - task `[mq:web]`;

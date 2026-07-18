@@ -4,7 +4,7 @@
 
 **Aceita / Revisável** — 2026-07-18.
 
-Revisões futuras exigem atualização desta ADR, da spec normativa e do `CHANGELOG` do workflow (quando existir), sem expandir escopo de produto.
+Revisões futuras exigem atualização desta ADR, da spec normativa e do [`docs/agents/CHANGELOG.md`](../../agents/CHANGELOG.md), sem expandir escopo de produto. Feedback loop: Learnings disposition na conclusion (spec §4.1).
 
 ## Contexto
 

@@ -77,6 +77,14 @@ Harnesses: [`harness/`](harness/).
 - Docs atualizados se aplicável
 - Sem expansão silenciosa de escopo
 
+## Feedback loop de qualidade
+
+1. Concluidor preenche **Learnings disposition** em `conclusion.md` (`practice` | `promote-to-skill` | `promote-to-ADR` | `discard`).
+2. Practices repetíveis → `merge-quest-learned-practices` (cap ≤30).
+3. Promote para skill/harness/ADR → proposal + Approval (não mutar no chat).
+4. Helper da próxima sessão lê Practices recentes + [`CHANGELOG.md`](CHANGELOG.md).
+5. Swarm: Orchestrator pode paralelizar fatias; não substitui Challenger/Approval/Reviewer.
+
 ## Relação com Linear
 
 Ver [`decomposition-linear.md`](decomposition-linear.md). Sessão sempre lista `linearIssues: [MER-…]` em `phase.md`.

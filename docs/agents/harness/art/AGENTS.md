@@ -1,28 +1,38 @@
 # Harness — Team art
 
-Skill: `merge-quest-art-pipeline` · **Produz** assets pixel-art.
+Skill: `merge-quest-art-pipeline` · **Implementa** pixel art / pipeline.
 
-## Escopo
+## Owner Linear
 
-Arte alinhada ao Design Book: 480×270 lógico, escala 2× inteira, chars 48×48, sem antialiasing, 75% técnico / 25% fantasia.
-
-## Regras
-
-- Trilha **Asset-Content**; Challenger obrigatório
-- Asset `approved` **não** se altera em silêncio — nova candidata
-- Preview 1× e ampliado
-- Seguir `art/AGENTS.md`
-
-## Nunca
-
-- Inventar estilo novo
-- Skills marketplace de pixel-art sem deny-list (default deny)
-- Commitar binários gigantes sem necessidade
+- Assets / pipeline: **Eduardo**
+- Design Book (MER-10): **co-owners Eduardo + Guilherme** (assignee Linear = Eduardo)
 
 ## Entrada
 
-Approval de domínio + `[mq:art]` + referências visuais.
+Approval + `[mq:art]`; Challenger obrigatório na trilha Asset-Content.
+
+## Escopo
+
+Sprites, tiles, props, cartas, HUD, efeitos; Design Book; export Aseprite; preview 1x/ampliado.
+
+## Fronteiras
+
+- 480×270 lógico; canvas personagem 48×48; escala inteira; sem antialiasing; 75% técnico / 25% fantasia.
+- Nunca overwrite `approved` — nova versão candidata.
+- Skills pixel marketplace: **deny default** de estilo novo; só apoio técnico sob Design Book.
+
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| art | Reviewer | previews + validators |
+| art | runtime/web | paths/exports estáveis |
+
+## Nunca
+
+- Inventar estilo fora do Design Book
+- Mover para approved sem artefato de Approval
 
 ## Skills
 
-`merge-quest-art-pipeline` apenas (pipeline Codex/Aseprite do repo).
+`merge-quest-art-pipeline`, Design Book docs, deny-list pixel marketplace em `docs/skills-map.md`.

@@ -1,12 +1,17 @@
 # Harness — Documentação
 
-Skill: `merge-quest-decomposition` + `merge-quest-docs` · **Nunca implementa produto.**
+Skills: `merge-quest-decomposition` + `merge-quest-docs` · **Nunca implementa produto.**
+
+## Entrada
+
+`brief.md` com trilha; pedido de spec/ADR/RFC ou decomposição Linear.
 
 ## Escopo
 
 - Escrever/atualizar specs, ADRs, RFCs, glossários no **repo**
 - **Propor** issues/labels/projects Linear (proposal + preview MCP)
 - Garantir links sessão ↔ `MER-*` ↔ docs
+- Registrar gaps de processo no CHANGELOG quando for mudança normativa
 - **Não** manter `docs/backlog/` canônico
 
 ## Fluxo Linear
@@ -16,7 +21,11 @@ Skill: `merge-quest-decomposition` + `merge-quest-docs` · **Nunca implementa pr
 3. Mutar via `plugin-linear-linear` ou UI
 4. Auditar
 
-Ver [`decomposition-linear.md`](../../decomposition-linear.md) e doc 12.
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| Documentação | Orchestrator | Spec/ADR N/A justificado ou versionado; proposal Linear se issues novas; `phase.md` → `decomposition` |
 
 ## Nunca
 
@@ -30,4 +39,4 @@ Spec/ADR + proposal Linear · `phase.md` → `decomposition`.
 
 ## Skills
 
-`merge-quest-decomposition`, `merge-quest-linear`, `merge-quest-mcp-setup`, `merge-quest-docs`.
+`merge-quest-decomposition`, `merge-quest-linear`, `merge-quest-mcp-setup`, `merge-quest-docs`, `documentation-and-adrs` (externa, apoio).

@@ -23,6 +23,14 @@ Use junto com **`merge-quest-reviewer`** (eixo CODE). Este skill ataca **evidên
 - infrastructure implements ports;
 - presentation has no business rule.
 
+### Isolamento (swap sem tocar core)
+
+| Troca | Mexe | Não mexe |
+|-------|------|----------|
+| Phaser → outro renderer | runtime adapter | game-core, use cases |
+| OpenAI → outro LLM | AIGateway adapter | game-core, veredito |
+| Drizzle/SQL | RunRepository adapter | portas de application |
+
 ### Game
 
 - rule belongs to game-core;

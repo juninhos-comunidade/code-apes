@@ -7,6 +7,8 @@ description: Create, revise, export, and validate Merge Quest pixel-art assets t
 
 Trilha **Asset/Content**: Helper → plan → **Challenger obrigatório** → Approval de domínio → produção → Reviewer checklist. Ver `docs/agents/tracks.md` e harness `docs/agents/harness/art/AGENTS.md`.
 
+**Owners:** assets/pipeline → Eduardo; Design Book (MER-10) → Eduardo + Guilherme (co-owners).
+
 Conteúdo de catálogo técnico (perguntas/rubricas) é **`merge-quest-content`**; este skill é pixel-art / pipeline Aseprite.
 
 ## Before creating

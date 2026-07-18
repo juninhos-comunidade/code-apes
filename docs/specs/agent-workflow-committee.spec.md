@@ -45,9 +45,27 @@ Definir o contrato verificável do committee multi-agente Merge Quest: papéis, 
 | Challenger | Não | Atacar plano/escopo/fronteiras | `challenge.md` |
 | Team (`game-core`…`qa`) | Sim | TDD + implementação na área | código/assets |
 | Reviewer | Não | Eixo spec + eixo código | `reviews/*` |
-| Concluidor | Não | Fechar sessão; propor Linear/PR | `conclusion.md` |
+| Concluidor | Não (só docs de fecho) | Fechar sessão; propor Linear/PR; disposition de learnings | `conclusion.md` |
 
 Humano: única fonte de **Approval** e de mutações sensíveis.
+
+### 4.1 Feedback loop de qualidade
+
+Após Reviewer, o Concluidor extrai learnings e aplica **Learnings disposition** em `conclusion.md`:
+
+| Disposition | Ação |
+|-------------|------|
+| `practice` | Uma linha em `merge-quest-learned-practices` (≤30; checável) |
+| `promote-to-skill` | Propor patch em `merge-quest-*` / harness — mutar só com Approval |
+| `promote-to-ADR` | Propor ADR ou revisão de ADR — mutar só com Approval |
+| `discard` | Registrar motivo; não alimentar Practices |
+
+Helper, no início da sessão seguinte, lê Practices datadas após a última sessão (ou últimas N entradas).  
+Changelog de processo: [`docs/agents/CHANGELOG.md`](../agents/CHANGELOG.md).
+
+### 4.2 Swarm orquestrado
+
+Orchestrator pode disparar **subagentes paralelos por fatia/domínio** (`pendingTeamTasks`). Isso é tática de execução, não orquestração concorrente ao committee. Saídas vão para artefatos de sessão; Challenger/Reviewer/Approval permanecem.
 
 ## 5. Fases
 
@@ -134,12 +152,14 @@ Concluidor **propõe** fechamento/comentário; não fecha issue sem Approval qua
 
 ## 11. Critérios de aceite desta spec
 
-- [ ] ADR-0006 aceita e referenciada
-- [ ] Docs em `docs/agents/` alinhados a esta spec
-- [ ] Harnesses por papel/domínio existem
-- [ ] Templates e `_template` de sessão cobrem artefatos obrigatórios
-- [ ] Dry-run mental Full + Light possível sem hooks
-- [ ] Nenhum doc exige `docs/backlog/` canônico
+- [x] ADR-0006 aceita e referenciada
+- [x] Docs em `docs/agents/` alinhados a esta spec
+- [x] Harnesses por papel/domínio existem
+- [x] Templates e `_template` de sessão cobrem artefatos obrigatórios
+- [x] Dry-run mental Full + Light possível sem hooks
+- [x] Nenhum doc exige `docs/backlog/` canônico
+- [x] Feedback loop (Learnings disposition) + `CHANGELOG` de processo
+- [x] Skill/roteamento `[mq:qa]` definido
 
 ## 12. Não-objetivos de qualidade de produto
 

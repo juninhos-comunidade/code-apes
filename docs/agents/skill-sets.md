@@ -27,6 +27,7 @@ Mapa operacional: [`docs/skills-map.md`](../skills-map.md).
 | `merge-quest-api` | API / contratos / IA gateway |
 | `merge-quest-content` | Catálogo / rubricas |
 | `merge-quest-art-pipeline` | Pixel art / Aseprite |
+| `merge-quest-qa` | QA / E2E / a11y / repro build |
 | `merge-quest-architecture-guard` | Camadas / POO / fronteiras |
 | `merge-quest-bootstrap` | Scaffolding monorepo |
 
@@ -38,16 +39,28 @@ Mapa operacional: [`docs/skills-map.md`](../skills-map.md).
 | `merge-quest-docs` | Specs/ADRs/hygiene |
 | Locais úteis | `typescript-pro`, `vitest-skill`, `zod-validation-expert`, `postgres-best-practices`, `frontend-*`, `api-*`, `code-review-excellence`, `accessibility-*`, `writing-plans`, `verification-before-completion` |
 
+## Discovery (instalação)
+
+| Local | Papel |
+|-------|--------|
+| `.agents/skills/merge-quest-*` | **Canônico** no repo (tool-agnóstico) |
+| `~/.cursor/skills/` ou plugin skills | Locais/externos do operador |
+| `npx skills add …` | Instala externas; mapear em `docs/skills-map.md` |
+
+Não é obrigatório symlinks `.cursor/skills` → repo para skills MQ.
+
 ## Externas — política
 
 | Classe | Política |
 |--------|----------|
-| ADR / docs SDD (addyosmani, wshobson, etc.) | Recomendadas como apoio; núcleo = docs MQ |
-| Phaser marketplace | Só com ressalva: **não** colocar regra no scene |
+| ADR / docs SDD (addyosmani, etc.) | Recomendadas como apoio; núcleo = docs MQ |
+| Phaser marketplace / oficial | Só com ressalva: **não** colocar regra no scene |
 | Pixel-art marketplace | **Deny default** — preferir Design Book + `merge-quest-art-pipeline` |
-| Linear skills fracas (&lt;~400 installs) | **Não** — usar MCP + `merge-quest-linear` |
-| Agent swarms / multi-agent genéricos | **Fora** — committee MQ é a orquestração |
+| Linear skills fracas (&lt;~1K installs) | **Não** — usar MCP + `merge-quest-linear` |
+| Agent swarms / multi-agent genéricos como SoT | **Fora** — committee MQ orquestra |
+| Swarm como tática | **Permitido** — Orchestrator paraleliza fatias; saídas em sessão |
 | grill-me / brainstorming | Opcional no Helper; não é núcleo |
+| Barra P0 | ≥1K installs (preferir ≥10K) **ou** fonte oficial |
 
 ## Deny-list (resumo)
 

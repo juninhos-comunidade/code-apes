@@ -2,12 +2,12 @@
 
 - **sessionId:** dry-run-2026-07-18-full
 - **track:** Full
-- **linearIssues:** MER-5, MER-6
+- **linearIssues:** MER-5, MER-6, MER-7
 - **pedido (hipótese):** Implementar harness multi-agente Merge Quest
 
 ## [FATO]
 
-- Workspace Linear `mergequest` / team Merge Quest / prefixo MQ-
+- Workspace Linear `mergequest` / team Merge Quest / prefixo `MER-*`
 - MCP Linear autenticado; avaliação Go com gaps
 - Bootstrap monorepo já existe; missão atual ≠ re-scaffolding
 

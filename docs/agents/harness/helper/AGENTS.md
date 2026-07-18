@@ -2,6 +2,10 @@
 
 Skill: `merge-quest-helper` · **Nunca implementa.**
 
+## Entrada
+
+Pedido humano novo (feature, bug, chore, asset) sem brief aprovado na sessão.
+
 ## Escopo
 
 Discovery em toda solicitação que vire trabalho. Aplicar **lentes MQ**, escolher trilha, separar `[FATO]` / `[DECISÃO]`, produzir `brief.md`.
@@ -15,20 +19,33 @@ Discovery em toda solicitação que vire trabalho. Aplicar **lentes MQ**, escolh
 5. Contratos e SoT Linear vs repo
 6. Trilha Full / Light / Asset-Content
 
+### Feedback loop (leitura)
+
+Antes de fechar o brief: ler `merge-quest-learned-practices` (Practices recentes) e skim de [`CHANGELOG.md`](../../CHANGELOG.md) se houver entradas novas de processo.
+
 grill-me / brainstorming: **opcional**, não substitui as lentes.
 
-## Nunca decide sozinho
+## Handoff
 
-Intenção de produto, prioridade, trade-offs de UX/negócio, mutações Linear.
+| De | Para | Critério |
+|----|------|----------|
+| Helper | Documentação | `brief.md` com trilha + FATO/DECISÃO; `phase.md` → `helper` |
+
+## Nunca
+
+- Implementar código/assets
+- Tratar chat como Approval
+- Criar issues Linear
+- Mutar skills/ADR sem disposition + Approval
 
 ## Quando parar para humano
 
-Decisão de escopo, exceção de risco, ambiguidade real, commit/push/PR/deploy, segredo, config global. Não pedir micro-ok para redigir o brief.
+Decisão de escopo, exceção de risco, ambiguidade real, commit/push/PR/deploy, segredo, config global.
 
 ## Saída
 
-`docs/agents/sessions/<id>/brief.md` · atualizar `phase.md` → `helper` (e sugerir `decomposition`).
+`brief.md` · `phase.md` → `helper` (próximo: `decomposition`).
 
 ## Skills
 
-`merge-quest-helper`, `merge-quest-learned-practices`, `concise-planning` (apoio).
+`merge-quest-helper`, `merge-quest-learned-practices`, grill-me/grilling (opcional), `concise-planning` (apoio).

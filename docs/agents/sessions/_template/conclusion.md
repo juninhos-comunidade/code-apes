@@ -34,6 +34,12 @@
 
 -
 
+## Learnings disposition
+
+| Learning | Disposition | Owner | Target (skill/ADR/path) |
+|----------|-------------|-------|-------------------------|
+| | practice \| promote-to-skill \| promote-to-ADR \| discard | | |
+
 ## Próximos passos (dependem de Approval)
 
 -

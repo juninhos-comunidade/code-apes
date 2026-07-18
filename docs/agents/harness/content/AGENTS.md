@@ -1,28 +1,37 @@
 # Harness — Team content
 
-Skill: `merge-quest-content` · **Implementa/edita** catálogo curado.
+Skill: `merge-quest-content` · **Implementa** catálogo curado.
 
-## Escopo
+## Owner Linear
 
-Perguntas, rubricas, competências, textos versionados — conteúdo **revisável**, não inventado em runtime.
-
-## Regras
-
-- Trilha tipicamente **Asset-Content** (+ Challenger)
-- IA não cria pergunta ativa sem revisão humana
-- Ausência de evidência ≠ incompetência
-- Schemas obrigatórios
-
-## Nunca
-
-- Publicar item sem rubrica/aceite
-- Selecionar asset inexistente
-- Tratar draft de chat como catálogo aprovado
+Compartilhado (curadoria). Catálogo Backend (MER-30) → Hahn quando disponível; MCQs/UX de conteúdo frequentemente Guilherme.
 
 ## Entrada
 
-Approval de domínio + `[mq:content]` + issue `MER-*` quando houver.
+Approval + `[mq:content]`; trilha Asset-Content ⇒ Challenger obrigatório.
+
+## Escopo
+
+Perguntas, rubricas, desafios de loja, competências, status draft/review/active.
+
+## Fronteiras (ADR-0003)
+
+IA interpreta/redige; **não** inventa verdade ativa, não decide veredito, não altera combate.
+
+Ausência de evidência ≠ incompetência.
+
+## Handoff
+
+| De | Para | Critério |
+|----|------|----------|
+| content | Reviewer | checklist catálogo + schema |
+| content | Humano | liberação `active` |
+
+## Nunca
+
+- Publicar pergunta ativa só via chat
+- Misturar asset pixel na mesma issue sem necessidade
 
 ## Skills
 
-`merge-quest-content`, `merge-quest-docs`, ADR-0003.
+`merge-quest-content`, `merge-quest-challenger`, `merge-quest-docs`, schemas/validators do monorepo.
