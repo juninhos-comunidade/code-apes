@@ -39,7 +39,7 @@ Use bootstrap **somente** quando:
 7. Create directories and documentation.
 8. Create placeholder configs.
 9. Do not install dependencies unless approved.
-10. Create `docs/repository-bootstrap-report.md`.
+10. Create `docs/history/repository-bootstrap-report.md`.
 11. Stop — **não** iniciar funcionalidades; Linear vem depois (`merge-quest-linear`, doc 12).
 
 ## Required report
