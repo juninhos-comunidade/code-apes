@@ -16,8 +16,11 @@ Branches: `tipo/MER-123-descricao` (ver `CONTRIBUTING.md` / `AGENTS.md`).
 | Prioridade produto | `priority:p0-vs`, `priority:p0`, `priority:p1`, `priority:p2` |
 | Tipo | `type:feature`, `type:bug`, `type:research`, `type:content`, `type:asset`, `type:tech-debt` |
 | Fluxo | `needs-review`, `blocked` |
+| Hackathon week (P0-VS → Demo) | `hackathon-c1`, `hackathon-c2`, `hackathon-c3`, `hackathon-c4` |
 
 Não preferir labels default `Feature` / `Improvement` / `Bug` — usar `type:*`.
+
+Waves hackathon (1 mês → MER-31): ver `docs/linear/proposals/2026-07-18-hackathon-cycles.md`. Cycles nativos 1–4 (1 week) + labels `hackathon-c*`.
 
 ## Campo Priority do Linear
 
