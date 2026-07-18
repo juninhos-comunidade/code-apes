@@ -53,7 +53,7 @@ pnpm --filter @merge-quest/api test
 
 ## Git
 
-- crie branch curta no padrão `tipo/MQ-123-descricao`;
+- crie branch curta no padrão `tipo/MER-123-descricao` (IDs Linear do team Merge Quest);
 - use commits convencionais;
 - vincule a issue do Linear quando o backlog existir;
 - abra PR com critérios de aceite e evidências dos checks;

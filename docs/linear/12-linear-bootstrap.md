@@ -2,7 +2,9 @@
 
 ## Regra
 
-O Codex deve propor antes de criar.
+O Codex / agente deve propor antes de criar.
+
+Nomenclatura: ver [`naming.md`](naming.md) — prefixo **`MER-*`**, labels `area:*` / `priority:*` / `type:*`.
 
 ## Initiative
 

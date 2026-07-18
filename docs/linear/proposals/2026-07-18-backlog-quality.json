@@ -1,0 +1,365 @@
+{
+  "MER-5": {
+    "title": "Bootstrap agent workflow (harness + skills)",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:tech-debt",
+      "priority:p0",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nHarness multi-agente mergeado no PR #1, com feedback loop e skills mapeadas.\n\n## Escopo\n\n**In:**\n- ADR-0006 + spec + workflow\n- skills merge-quest-* + mapa P0\n- dry-runs honestos\n- feedback loop disposition\n\n**Out:**\n- features de jogo\n- Initiative UI\n\n## Aceite (DoD)\n\n- [ ] PR #1 mergeado em main\n- [ ] docs/agents/CHANGELOG.md e Learnings disposition presentes\n- [ ] skills-map lista in-repo + P0 externas + deny-list\n- [ ] prefixo Linear canônico permanece MER-* (sem rename MQ)\n- [ ] dry-runs Full/Light/Asset-Content com approvals/reviews\n\n## Verify\n\n- perfil: Session\n- checks: review documental do PR; links sessão 2026-07-18-workflow-refinement\n\n## Docs\n\n- docs/agents/\n- docs/skills-map.md\n- docs/linear/naming.md\n- ADR-0006\n\n## Depende de\n\n- nenhuma\n\n## Blocks\n- MER-32 (parcial — hygiene restante)\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`process`\n"
+  },
+  "MER-8": {
+    "title": "P0-VS — Vertical slice jogável (épico)",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nÉpico: vertical slice jogável 12–18 min cobrindo jornada Carta Magna + doc 09.\n\n## Escopo\n\n**In:**\n- filhos MER-9…34 + gaps NEW\n- DoD playtest doc 09\n\n**Out:**\n- 5 andares\n- 8 domínios profundos\n- mobile completo\n- ranking\n\n## Aceite (DoD)\n\n- [ ] Fluxo perfil→vaga→deck→andar→combate→loja→chefe→veredito jogável sem intervenção técnica\n- [ ] Checkpoint e reinício sem limpeza manual\n- [ ] Relatório usa dados da run\n- [ ] Filhos críticos Done ou waiver documentado\n- [ ] Demo MER-31 atende duração 12–18 min\n\n## Verify\n\n- perfil: Release\n- checks: playtest humano + delivery-gate Release\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/product/11-roadmap-risks-and-definition-of-done.md\n\n## Depende de\n\n- nenhuma\n\n## Blocks\n- (nenhum explícito)\n\n## Owner\n\nEduardo (coordenação)\n\n## [mq:área]\n\n`process`\n"
+  },
+  "MER-9": {
+    "title": "game-core — skeleton + primeiro teste TDD",
+    "assignee": "Eduardo Neves de Souza",
+    "parentId": "MER-8",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nPacote game-core puro com skeleton e primeiro teste TDD verde.\n\n## Escopo\n\n**In:**\n- package boundary\n- teste unitário mínimo\n- export público tipado\n\n**Out:**\n- React/Phaser\n- persistência\n- IA SDK\n\n## Aceite (DoD)\n\n- [ ] Pacote existe e typecheck passa no pacote\n- [ ] ≥1 teste unitário passando (Vitest)\n- [ ] Nenhum import React/Phaser/DOM/DB/SDK IA\n- [ ] README/AGENTS do pacote aponta ADR-0002\n- [ ] CI local: pnpm test --filter game-core (ou equivalente)\n\n## Verify\n\n- perfil: Session\n- checks: pnpm test no pacote game-core; rg imports proibidos\n\n## Docs\n\n- ADR-0002\n- docs/engineering/07-poo-tdd-layered-architecture.md\n- packages/game-core/AGENTS.md\n\n## Depende de\n\n- nenhuma\n\n## Blocks\n- MER-21\n- MER-22\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`game-core`\n"
+  },
+  "MER-10": {
+    "title": "Design Book v1 (placeholder canônico)",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:asset",
+      "priority:p0-vs",
+      "area:art",
+      "area:design"
+    ],
+    "description": "## Objetivo\n\nDesign Book v1 canônico no repo para orientar arte e UI do VS.\n\n## Escopo\n\n**In:**\n- arquivo canônico\n- paleta/escala/pixel rules\n- link em AGENTS/art-pipeline\n\n**Out:**\n- redesign de marca completo\n- assets finais aprovados em massa\n\n## Aceite (DoD)\n\n- [ ] Arquivo canônico versionado (ex. docs/design/design-book.md)\n- [ ] Alinha docs/design/05 + protótipo aprovado\n- [ ] Referenciado por merge-quest-art-pipeline e MER-34\n- [ ] Define 480×270, escala inteira, sem antialiasing\n- [ ] Co-owners Eduardo + Guilherme registrados no corpo\n\n## Verify\n\n- perfil: Session\n- checks: links quebrados; preview regras vs protótipo\n\n## Docs\n\n- docs/design/05-visual-design-and-asset-rules.md\n- docs/design/13-codex-aseprite-pipeline.md\n\n## Depende de\n\n- nenhuma\n\n## Blocks\n- MER-34\n\n## Owner\n\nEduardo + Guilherme (co-owners)\n\n## [mq:área]\n\n`art`\n"
+  },
+  "MER-11": {
+    "title": "Jornada — Perfil (RF-02..04)",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:ai",
+      "area:react"
+    ],
+    "description": "## Objetivo\n\nFluxo React de perfil simplificado (RF-02..04) alimentando a jornada VS.\n\n## Escopo\n\n**In:**\n- form/tela perfil\n- validação client\n- contrato com API\n\n**Out:**\n- avaliação de competência no client\n- perguntas inventadas\n\n## Aceite (DoD)\n\n- [ ] Tela perfil usável no shell React\n- [ ] Validação Zod/schema alinhada ao contrato\n- [ ] Dados enviados à API sem segredo no client\n- [ ] Estados loading/error explícitos\n- [ ] Sem regra de combate/veredito no componente\n\n## Verify\n\n- perfil: Delivery\n- checks: testes UI ou RTL + typecheck apps/web\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/product/04-ai-assessment-and-content.md\n\n## Depende de\n\n- MER-12\n- MER-24\n\n## Blocks\n- MER-14\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "MER-12": {
+    "title": "Jornada — Auth (RF-01)",
+    "assignee": null,
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:backend",
+      "blocked"
+    ],
+    "description": "## Objetivo\n\nAuth RF-01 via API (Supabase Auth atrás de porta), sessão válida para o VS.\n\n## Escopo\n\n**In:**\n- signup/login mínimo\n- AuthGateway\n- tokens protegidos no server\n\n**Out:**\n- OAuth social completo\n- RBAC avançado\n\n## Aceite (DoD)\n\n- [ ] Endpoints auth documentados e validados Zod\n- [ ] Sessão autenticada necessária para checkpoint/run\n- [ ] Chaves só no server\n- [ ] Testes com fake AuthGateway\n- [ ] Issue marcada blocked até Hahn no workspace\n\n## Verify\n\n- perfil: Delivery\n- checks: testes api auth + smoke MCP/local\n\n## Docs\n\n- ADR-0005\n- docs/engineering/08-data-contracts-and-schemas.md\n\n## Depende de\n\n- nenhuma\n\n## Blocks\n- MER-11\n- MER-13\n- MER-25\n\n## Owner\n\nHahn\n\n## [mq:área]\n\n`api`\n"
+  },
+  "MER-13": {
+    "title": "Jornada — Vaga (RF-05..07)",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:ai",
+      "area:react"
+    ],
+    "description": "## Objetivo\n\nFluxo React de vaga (RF-05..07) no shell.\n\n## Escopo\n\n**In:**\n- tela vaga\n- campos mínimos VS\n- contrato API\n\n**Out:**\n- matching profundo multi-domínio\n\n## Aceite (DoD)\n\n- [ ] Tela vaga no shell\n- [ ] Schema validado\n- [ ] Persiste via API quando auth ok\n- [ ] Loading/error\n- [ ] Sem inventar requisitos de vaga via IA no client\n\n## Verify\n\n- perfil: Delivery\n- checks: typecheck + teste UI/contrato\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n\n## Depende de\n\n- MER-12\n- MER-24\n\n## Blocks\n- MER-14\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "MER-14": {
+    "title": "Jornada — Cruzamento perfil × vaga",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:ai",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nCruzamento perfil×vaga com IA atrás da API; resultado estruturado validado.\n\n## Escopo\n\n**In:**\n- use case AnalyzeProfile/Job\n- UI de resultado\n- fallback se IA falhar\n\n**Out:**\n- IA decide veredito/combate\n- perguntas ativas inventadas\n\n## Aceite (DoD)\n\n- [ ] Chamada só via API gateway\n- [ ] Resposta Zod-validada\n- [ ] Fallback determinístico documentado\n- [ ] UI mostra interpretação sem fabricar competência\n- [ ] ADR-0003 respeitado\n\n## Verify\n\n- perfil: Delivery\n- checks: testes use case com fake AIGateway\n\n## Docs\n\n- ADR-0003\n- docs/product/04-ai-assessment-and-content.md\n\n## Depende de\n\n- MER-11\n- MER-13\n- MER-26\n\n## Blocks\n- MER-15\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "MER-15": {
+    "title": "Jornada — Deck inicial + briefing",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:content",
+      "area:ai"
+    ],
+    "description": "## Objetivo\n\nDeck inicial + briefing da run a partir do cruzamento (RF-09).\n\n## Escopo\n\n**In:**\n- seleção/atribuição deck VS\n- briefing UI\n- estado inicial run\n\n**Out:**\n- metagame de crafting completo\n\n## Aceite (DoD)\n\n- [ ] Deck inicial determinístico a partir de inputs\n- [ ] Briefing renderizado no React\n- [ ] Estado inicial serializável (liga MER-35 run lifecycle)\n- [ ] Sem regra de combate no React\n- [ ] Conteúdo de cartas vem do catálogo (MER-30/29)\n\n## Verify\n\n- perfil: Delivery\n- checks: teste de montagem deck + snapshot briefing\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/product/03-game-design.md\n\n## Depende de\n\n- MER-14\n- MER-30\n- MER-35\n\n## Blocks\n- MER-16\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "MER-16": {
+    "title": "Jornada — Exploração do andar VS",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:phaser"
+    ],
+    "description": "## Objetivo\n\nExploração Phaser do andar VS: movimento, colisão, portas, transição de salas.\n\n## Escopo\n\n**In:**\n- movimento\n- colisão\n- portas\n- transição\n- integração grafo MER-36\n\n**Out:**\n- regra de dano na cena\n- 5 andares\n\n## Aceite (DoD)\n\n- [ ] Herói move e colide\n- [ ] Portas abrem/fecham com feedback\n- [ ] Transição entre salas do grafo MER-36\n- [ ] Input vira comandos tipados; core decide estado de exploração se aplicável\n- [ ] Sem antialiasing; escala inteira\n\n## Verify\n\n- perfil: Delivery\n- checks: smoke cena + testes adapter se houver\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- ADR-0002\n\n## Depende de\n\n- MER-9\n- MER-27\n- MER-36\n- MER-34\n\n## Blocks\n- MER-17\n- MER-18\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`runtime`\n"
+  },
+  "MER-17": {
+    "title": "Jornada — Combate card battler 3x3",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:phaser"
+    ],
+    "description": "## Objetivo\n\nBatalha comum VS: grid 3x3 apresentado no runtime; resolução no game-core.\n\n## Escopo\n\n**In:**\n- cena combate\n- projeção eventos\n- gancho perguntas MER-37\n\n**Out:**\n- cálculo de dano na cena\n- IA altera HP\n\n## Aceite (DoD)\n\n- [ ] Grid 3x3 jogável visualmente\n- [ ] Resolução exclusivamente via game-core (MER-23)\n- [ ] Perguntas no combate via MER-37\n- [ ] Recompensas aplicadas pelo core\n- [ ] Replay/serialização não quebra após batalha\n\n## Verify\n\n- perfil: Delivery\n- checks: teste core combate + smoke runtime\n\n## Docs\n\n- docs/product/03-game-design.md\n- ADR-0002\n- docs/product/09-vertical-slice-and-acceptance.md\n\n## Depende de\n\n- MER-23\n- MER-28\n- MER-29\n- MER-37\n\n## Blocks\n- MER-19\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`runtime`\n"
+  },
+  "MER-18": {
+    "title": "Jornada — Loja + desafio aplicado",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:content",
+      "area:react"
+    ],
+    "description": "## Objetivo\n\nLoja + desafio aplicado do VS (UI React + conteúdo MER-29).\n\n## Escopo\n\n**In:**\n- UI loja\n- fluxo desafio\n- hooks API/catálogo\n\n**Out:**\n- economia completa multi-andar\n- sandbox container (stretch se não P0)\n\n## Aceite (DoD)\n\n- [ ] Loja navegável no VS\n- [ ] Desafio usa item de catálogo revisado\n- [ ] Resultado Pass/Fail alimenta core/recompensa sem IA inventar\n- [ ] Estados loading/error\n- [ ] Sem regra de combate no React\n\n## Verify\n\n- perfil: Delivery\n- checks: teste fluxo UI + contrato\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- ADR-0003\n\n## Depende de\n\n- MER-16\n- MER-29\n- MER-24\n\n## Blocks\n- (nenhum explícito)\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "MER-19": {
+    "title": "Jornada — Chefe duas fases",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:phaser"
+    ],
+    "description": "## Objetivo\n\nChefe de duas fases no VS com perguntas e feedback visual.\n\n## Escopo\n\n**In:**\n- duas fases\n- transição\n- perguntas (catálogo)\n- projeção visual\n\n**Out:**\n- elites\n- múltiplos chefes\n\n## Aceite (DoD)\n\n- [ ] Fase 1 e 2 jogáveis\n- [ ] Transição de fase clara\n- [ ] Resolução no game-core\n- [ ] Perguntas do catálogo (não inventadas)\n- [ ] Nocaute/checkpoint respeitam MER-25/35\n\n## Verify\n\n- perfil: Delivery\n- checks: smoke chefe + testes core se regras novas\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/product/03-game-design.md\n\n## Depende de\n\n- MER-17\n- MER-23\n- MER-29\n\n## Blocks\n- MER-20\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`runtime`\n"
+  },
+  "MER-20": {
+    "title": "Jornada — Veredito e relatório",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:ai",
+      "area:react"
+    ],
+    "description": "## Objetivo\n\nVeredito determinístico no core + relatório React com dados da run (RF-19).\n\n## Escopo\n\n**In:**\n- UI relatório\n- consumo snapshot run\n- copy IA só interpretação\n\n**Out:**\n- IA decide veredito\n- ranking\n\n## Aceite (DoD)\n\n- [ ] Veredito calculado no game-core\n- [ ] Relatório usa dados reais da run\n- [ ] IA no máximo interpreta texto; não muda scores\n- [ ] A11y básica na tela\n- [ ] Export/print opcional não bloqueia DoD\n\n## Verify\n\n- perfil: Delivery\n- checks: teste veredito core + UI relatório\n\n## Docs\n\n- ADR-0003\n- docs/product/09-vertical-slice-and-acceptance.md\n\n## Depende de\n\n- MER-19\n- MER-21\n- MER-25\n\n## Blocks\n- MER-31\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "MER-21": {
+    "title": "game-core — estado da run e Confiança",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nModelo de estado da run com Confiança como vida (RF-15).\n\n## Escopo\n\n**In:**\n- entidades/VOs\n- invariantes Confiança\n- serialização estado\n\n**Out:**\n- UI\n- persistência HTTP\n\n## Aceite (DoD)\n\n- [ ] Estado imutável/transições puras\n- [ ] Confiança sobe/desce só via comandos tipados\n- [ ] Testes TDD cobrindo bordas (0, max)\n- [ ] Serialização round-trip\n- [ ] Sem frameworks UI\n\n## Verify\n\n- perfil: Session\n- checks: vitest game-core\n\n## Docs\n\n- ADR-0002\n- PROJECT-MAP.md\n\n## Depende de\n\n- MER-9\n\n## Blocks\n- MER-23\n- MER-20\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`game-core`\n"
+  },
+  "MER-22": {
+    "title": "game-core — comandos e eventos determinísticos",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nPipeline comando→evento determinístico consumível por React/Phaser.\n\n## Escopo\n\n**In:**\n- tipos Command/Event\n- execute(state,command)\n- docs de contrato\n\n**Out:**\n- side-effects I/O\n\n## Aceite (DoD)\n\n- [ ] API tipada de comandos\n- [ ] Eventos serializáveis\n- [ ] Mesmo input → mesmo output (teste)\n- [ ] Documentado para MER-27\n- [ ] Sem I/O\n\n## Verify\n\n- perfil: Session\n- checks: vitest determinismo\n\n## Docs\n\n- docs/engineering/08-data-contracts-and-schemas.md\n- ADR-0002\n\n## Depende de\n\n- MER-9\n\n## Blocks\n- MER-23\n- MER-27\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`game-core`\n"
+  },
+  "MER-23": {
+    "title": "game-core — combate 3x3 + serialização/replay",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nResolução de combate 3x3 + payload checkpoint/replay no core.\n\n## Escopo\n\n**In:**\n- regras combate\n- replay\n- integração Confiança\n\n**Out:**\n- animações\n- Phaser\n\n## Aceite (DoD)\n\n- [ ] Combate unit-tested\n- [ ] Serialização round-trip\n- [ ] Replay determinístico\n- [ ] Integra com MER-21/22\n- [ ] Nenhuma dependência UI\n\n## Verify\n\n- perfil: Delivery\n- checks: vitest combate+replay\n\n## Docs\n\n- docs/product/03-game-design.md\n- docs/product/09-vertical-slice-and-acceptance.md\n- ADR-0002\n\n## Depende de\n\n- MER-21\n- MER-22\n\n## Blocks\n- MER-17\n- MER-19\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`game-core`\n"
+  },
+  "MER-24": {
+    "title": "React — shell + Design System mínimo",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:react",
+      "area:design"
+    ],
+    "description": "## Objetivo\n\nShell React + DS mínimo para montar Phaser e fluxos VS.\n\n## Escopo\n\n**In:**\n- app shell\n- tokens/DS mínimo\n- mount Phaser\n- rotas base\n\n**Out:**\n- design system completo\n- regra de combate\n\n## Aceite (DoD)\n\n- [ ] App sobe localmente\n- [ ] Phaser monta dentro do shell\n- [ ] Tokens básicos alinhados Design Book\n- [ ] Rotas para perfil/vaga/briefing/relatório\n- [ ] A11y básica navegação\n\n## Verify\n\n- perfil: Delivery\n- checks: pnpm dev web + typecheck\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/design/05-visual-design-and-asset-rules.md\n\n## Depende de\n\n- MER-10\n\n## Blocks\n- MER-11\n- MER-13\n- MER-27\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "MER-25": {
+    "title": "API — persistência perfil/vaga/run/checkpoint",
+    "assignee": null,
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:database",
+      "area:backend",
+      "blocked"
+    ],
+    "description": "## Objetivo\n\nPersistência Drizzle/Supabase para perfil, vaga, run e checkpoints.\n\n## Escopo\n\n**In:**\n- migrations\n- RunRepository\n- checkpoint fim sala/andar/nocaute\n\n**Out:**\n- analytics warehouse\n\n## Aceite (DoD)\n\n- [ ] Migrações versionadas\n- [ ] Checkpoint nos pontos do VS\n- [ ] Testes com fakes (sem cloud obrigatório)\n- [ ] Portas sem vazar SQL no domain\n- [ ] blocked até Hahn\n\n## Verify\n\n- perfil: Delivery\n- checks: testes integration com sqlite/fake\n\n## Docs\n\n- ADR-0005\n- docs/engineering/08-data-contracts-and-schemas.md\n\n## Depende de\n\n- MER-12\n- MER-38\n\n## Blocks\n- MER-16\n- MER-17\n- MER-31\n\n## Owner\n\nHahn\n\n## [mq:área]\n\n`api`\n"
+  },
+  "MER-26": {
+    "title": "API — adapters IA + validação Zod",
+    "assignee": null,
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:ai",
+      "area:backend",
+      "blocked"
+    ],
+    "description": "## Objetivo\n\nAIGateway + adapters OpenAI com validação Zod e fallback.\n\n## Escopo\n\n**In:**\n- porta AIGateway\n- adapter\n- schemas\n- fallback\n\n**Out:**\n- IA no client\n- IA decide veredito\n\n## Aceite (DoD)\n\n- [ ] Toda IA atrás da API\n- [ ] Zod na boundary\n- [ ] Fallback testado\n- [ ] Logs sem vazar segredo\n- [ ] ADR-0003 checklist no PR\n\n## Verify\n\n- perfil: Delivery\n- checks: unit adapter fake + schema tests\n\n## Docs\n\n- ADR-0003\n- ADR-0004\n- docs/engineering/08-data-contracts-and-schemas.md\n\n## Depende de\n\n- MER-38\n\n## Blocks\n- MER-14\n\n## Owner\n\nHahn\n\n## [mq:área]\n\n`api`\n"
+  },
+  "MER-27": {
+    "title": "Contrato React ↔ Phaser (eventos tipados)",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:phaser",
+      "area:react"
+    ],
+    "description": "## Objetivo\n\nContrato tipado de eventos/comandos entre React shell e Phaser runtime.\n\n## Escopo\n\n**In:**\n- tipos compartilhados\n- bridge\n- pausa/retomada\n- snapshots\n\n**Out:**\n- acesso a estado interno cross-side\n\n## Aceite (DoD)\n\n- [ ] Eventos tipados documentados\n- [ ] Nenhum lado acessa estado interno do outro\n- [ ] Pausa/retomada funciona\n- [ ] Alinha a MER-22 comandos/eventos\n- [ ] Teste de contrato ou type-level check\n\n## Verify\n\n- perfil: Delivery\n- checks: typecheck + teste bridge\n\n## Docs\n\n- docs/product/10-team-responsibilities.md\n- docs/engineering/08-data-contracts-and-schemas.md\n\n## Depende de\n\n- MER-22\n- MER-24\n- MER-38\n\n## Blocks\n- MER-16\n- MER-17\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`runtime`\n"
+  },
+  "MER-28": {
+    "title": "Phaser — grid, comandante e resposta visual",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:phaser"
+    ],
+    "description": "## Objetivo\n\nApresentação visual: grid, comandante físico, feedbacks de combate.\n\n## Escopo\n\n**In:**\n- grid visual\n- comandante\n- VFX/feedback\n- assets MER-34\n\n**Out:**\n- regras de dano\n- pathfinding complexo stretch\n\n## Aceite (DoD)\n\n- [ ] Grid renderiza 3x3\n- [ ] Comandante físico presente na exploração/combate conforme doc 09\n- [ ] Feedback visual de acerto/erro/seleção\n- [ ] Sem regra de resolução na cena\n- [ ] Assets approved/candidatos sem overwrite silencioso\n\n## Verify\n\n- perfil: Delivery\n- checks: smoke visual 1x e 2x\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- ADR-0002\n\n## Depende de\n\n- MER-34\n- MER-23\n\n## Blocks\n- MER-17\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`runtime`\n"
+  },
+  "MER-29": {
+    "title": "Conteúdo — MCQs + desafio loja + rubrica VS",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:content",
+      "priority:p0-vs",
+      "area:content"
+    ],
+    "description": "## Objetivo\n\nMCQs, desafio de loja e rubrica curados para o VS (status review→active).\n\n## Escopo\n\n**In:**\n- 2 perguntas batalha comum\n- 4 perguntas chefe\n- 1 desafio loja\n- rubrica\n\n**Out:**\n- perguntas ativas inventadas por IA\n- banco infinito\n\n## Aceite (DoD)\n\n- [ ] Itens no schema do catálogo\n- [ ] Status draft/review/active explícito\n- [ ] Humano libera active\n- [ ] Rubrica verificável\n- [ ] ADR-0003: IA não inventa resposta correta\n\n## Verify\n\n- perfil: Session\n- checks: validador de catálogo + review checklist\n\n## Docs\n\n- docs/product/04-ai-assessment-and-content.md\n- ADR-0003\n- docs/product/09-vertical-slice-and-acceptance.md\n\n## Depende de\n\n- MER-30\n\n## Blocks\n- MER-17\n- MER-18\n- MER-19\n- MER-37\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`content`\n"
+  },
+  "MER-30": {
+    "title": "Conteúdo — catálogo Backend do andar VS",
+    "assignee": null,
+    "labels": [
+      "type:content",
+      "priority:p0-vs",
+      "area:content",
+      "blocked"
+    ],
+    "description": "## Objetivo\n\nCatálogo técnico domínio Backend para o andar VS.\n\n## Escopo\n\n**In:**\n- itens catálogo Backend\n- competências mínimas\n- schema\n\n**Out:**\n- 8 áreas profundas\n\n## Aceite (DoD)\n\n- [ ] Catálogo Backend versionado no repo/DB\n- [ ] Schema validado\n- [ ] Sem perguntas active sem review\n- [ ] Servido via API\n- [ ] blocked até Hahn (persistência/API) com Guilherme na curadoria\n\n## Verify\n\n- perfil: Delivery\n- checks: schema validate + seed load\n\n## Docs\n\n- docs/product/04-ai-assessment-and-content.md\n- docs/product/09-vertical-slice-and-acceptance.md\n\n## Depende de\n\n- MER-25\n- MER-38\n\n## Blocks\n- MER-29\n- MER-15\n\n## Owner\n\nHahn (API) + Guilherme (curadoria)\n\n## [mq:área]\n\n`content`\n"
+  },
+  "MER-31": {
+    "title": "Demo — playtest 12–18 min + DoD",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:qa",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nPlaytest demo 12–18 min cumprindo DoD do vertical slice.\n\n## Escopo\n\n**In:**\n- roteiro playtest\n- checklist doc 09/11\n- gravação notas\n\n**Out:**\n- polish infinito\n\n## Aceite (DoD)\n\n- [ ] Run completa 12–18 min\n- [ ] Sem intervenção técnica\n- [ ] Reinício limpo\n- [ ] Relatório coerente\n- [ ] Checklist DoD assinado na issue\n\n## Verify\n\n- perfil: Release\n- checks: playtest humano + notes anexadas\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/product/11-roadmap-risks-and-definition-of-done.md\n\n## Depende de\n\n- MER-20\n- MER-33\n- MER-25\n\n## Blocks\n- (nenhum explícito)\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`qa`\n"
+  },
+  "MER-32": {
+    "title": "Linear — higiene pós-população (Hahn, Initiative, audit)",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:tech-debt",
+      "priority:p0",
+      "area:product"
+    ],
+    "description": "## Objetivo\n\nHigiene workspace Linear pós-população sem rename MER→MQ.\n\n## Escopo\n\n**In:**\n- Hahn invite\n- Initiative UI\n- audit coerente\n\n**Out:**\n- rename identifier MQ\n\n## Aceite (DoD)\n\n- [ ] Hahn convidado\n- [ ] Initiative criada e vinculada\n- [ ] Assignees API revisados\n- [ ] Audit docs atualizados\n- [ ] Prefixo permanece MER-*\n\n## Verify\n\n- perfil: Session\n- checks: list_users + list_projects vs docs\n\n## Docs\n\n- docs/linear/naming.md\n- docs/linear/2026-07-18-population-audit.md\n\n## Depende de\n\n- nenhuma\n\n## Blocks\n- (nenhum explícito)\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`process`\n"
+  },
+  "MER-33": {
+    "title": "QA — build reprodutível + testes críticos",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:qa"
+    ],
+    "description": "## Objetivo\n\nBuild reprodutível e suíte crítica (unit/integration) para o VS.\n\n## Escopo\n\n**In:**\n- scripts turbo/pnpm\n- testes críticos\n- sem segredo no repo\n\n**Out:**\n- cobertura 100%\n- farm E2E completo\n\n## Aceite (DoD)\n\n- [ ] Build documentado em outra máquina/clean CI\n- [ ] Testes críticos game-core+contratos verdes\n- [ ] Sem segredos commitados\n- [ ] Gate Session/Delivery documentado\n- [ ] A11y smoke básico listado\n\n## Verify\n\n- perfil: Delivery\n- checks: pnpm test + pnpm build (ou turbo)\n\n## Docs\n\n- docs/engineering/15-local-development-and-reproducibility.md\n- merge-quest-delivery-gate\n\n## Depende de\n\n- MER-9\n\n## Blocks\n- MER-31\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`qa`\n"
+  },
+  "MER-34": {
+    "title": "Arte — assets mínimos do vertical slice",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:asset",
+      "priority:p0-vs",
+      "area:art"
+    ],
+    "description": "## Objetivo\n\nProduzir/exportar assets mínimos doc 09 via pipeline Aseprite.\n\n## Escopo\n\n**In:**\n- herói\n- 2 aliados\n- 2 inimigos\n- comandante\n- chefe\n- lojista\n- tiles/props/cartas/HUD/cronômetros/efeitos\n\n**Out:**\n- overwrite approved silencioso\n- estilo novo fora Design Book\n\n## Aceite (DoD)\n\n- [ ] Lista doc 09 exportada\n- [ ] Preview 1x e ampliado\n- [ ] Validators pipeline ok\n- [ ] Sem overwrite approved\n- [ ] Design Book MER-10 respeitado\n\n## Verify\n\n- perfil: Delivery\n- checks: art-pipeline validators + previews\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/design/13-codex-aseprite-pipeline.md\n\n## Depende de\n\n- MER-10\n\n## Blocks\n- MER-28\n- MER-16\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`art`\n"
+  },
+  "NEW-35": {
+    "title": "Jornada — Run lifecycle (RF-10 start/end/reinício)",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:product"
+    ],
+    "project": "Produto e requisitos",
+    "parentId": "MER-8",
+    "create": true,
+    "description": "## Objetivo\n\nCiclo de vida da run: start, end, reinício sem limpeza manual (RF-10).\n\n## Escopo\n\n**In:**\n- StartRun/EndRun\n- reset determinístico\n- hooks API checkpoint\n\n**Out:**\n- multi-run meta progression\n\n## Aceite (DoD)\n\n- [ ] Comando/use-case StartRun e EndRun definidos\n- [ ] Reinício limpa estado sem passo manual externo\n- [ ] Integra MER-21 estado + MER-25 persistência\n- [ ] Testes de lifecycle\n- [ ] Documentado no contrato MER-38\n\n## Verify\n\n- perfil: Delivery\n- checks: testes application + core state\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- docs/history/pdf-extraction-2026-07-18.md\n\n## Depende de\n\n- MER-21\n- MER-22\n- MER-25\n\n## Blocks\n- MER-15\n- MER-31\n\n## Owner\n\nGuilherme (orquestração) + Eduardo (core)\n\n## [mq:área]\n\n`game-core`\n"
+  },
+  "NEW-36": {
+    "title": "Jornada — Grafo de salas do andar VS (Lab/Oficina/Backend)",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:phaser"
+    ],
+    "project": "Jogo Phaser",
+    "parentId": "MER-8",
+    "create": true,
+    "description": "## Objetivo\n\nGrafo de 5–6 salas do andar VS incluindo Lab, Oficina e Backend dominante.\n\n## Escopo\n\n**In:**\n- definição salas\n- edges/portas\n- conteúdo por sala\n\n**Out:**\n- elites\n- andares extras\n\n## Aceite (DoD)\n\n- [ ] Grafo documentado e consumível pelo runtime\n- [ ] Lab e Oficina presentes\n- [ ] Backend dominante no VS\n- [ ] Transições testáveis\n- [ ] Sem regra de combate no grafo\n\n## Verify\n\n- perfil: Session\n- checks: fixture grafo + smoke exploração\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n\n## Depende de\n\n- MER-9\n\n## Blocks\n- MER-16\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`runtime`\n"
+  },
+  "NEW-37": {
+    "title": "Jornada — Overlay de pergunta no combate (cronômetro)",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:react",
+      "area:phaser"
+    ],
+    "project": "Frontend React",
+    "parentId": "MER-8",
+    "create": true,
+    "description": "## Objetivo\n\nOverlay React de pergunta cronometrada durante combate, sem resolver regras no UI.\n\n## Escopo\n\n**In:**\n- overlay pergunta\n- cronômetro\n- bridge React↔Phaser\n- itens MER-29\n\n**Out:**\n- IA gera pergunta active\n\n## Aceite (DoD)\n\n- [ ] Pergunta aparece no combate comum/chefe\n- [ ] Cronômetro visível\n- [ ] Resposta vira comando tipado; core/avalia via rubrica\n- [ ] Pausa Phaser coerente (MER-27)\n- [ ] Conteúdo só do catálogo active\n\n## Verify\n\n- perfil: Delivery\n- checks: teste bridge + smoke combate com pergunta\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n- ADR-0003\n\n## Depende de\n\n- MER-27\n- MER-29\n- MER-24\n\n## Blocks\n- MER-17\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`web`\n"
+  },
+  "NEW-38": {
+    "title": "Contratos — DTOs/Zod compartilhados (web↔api↔runtime)",
+    "assignee": "Guilherme de Deus Dalosto",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:product"
+    ],
+    "project": "Arquitetura e infraestrutura",
+    "parentId": "MER-8",
+    "create": true,
+    "description": "## Objetivo\n\nPacote de contratos versionados (DTOs/Zod) compartilhados entre web, api e eventos runtime.\n\n## Escopo\n\n**In:**\n- package contracts\n- versionamento\n- schemas perfil/vaga/run/eventos\n\n**Out:**\n- lógica de negócio no pacote\n\n## Aceite (DoD)\n\n- [ ] Pacote sem React/Phaser/DB\n- [ ] Schemas Zod exportados\n- [ ] Consumido por api e web\n- [ ] Alinha comandos/eventos MER-22\n- [ ] Typecheck dos consumidores\n\n## Verify\n\n- perfil: Session\n- checks: pnpm typecheck filters contracts/web/api\n\n## Docs\n\n- docs/engineering/08-data-contracts-and-schemas.md\n- ADR-0002\n\n## Depende de\n\n- nenhuma\n\n## Blocks\n- MER-25\n- MER-26\n- MER-27\n\n## Owner\n\nGuilherme\n\n## [mq:área]\n\n`docs`\n"
+  },
+  "NEW-39": {
+    "title": "QA — Telemetria mínima do VS (sala/combate/relatório)",
+    "assignee": "Eduardo Neves de Souza",
+    "labels": [
+      "type:feature",
+      "priority:p0-vs",
+      "area:qa"
+    ],
+    "project": "QA, acessibilidade e telemetria",
+    "parentId": "MER-8",
+    "create": true,
+    "description": "## Objetivo\n\nEventos mínimos de telemetria: sala, combate, relatório — sem PII sensível.\n\n## Escopo\n\n**In:**\n- event schema\n- emit points\n- docs\n\n**Out:**\n- analytics product completo\n\n## Aceite (DoD)\n\n- [ ] Schema de eventos documentado\n- [ ] Emite em transição de sala, fim combate, veredito\n- [ ] Sem PII/segredo\n- [ ] Pode ser no-op/local sink no VS\n- [ ] Teste unitário do emitter\n\n## Verify\n\n- perfil: Session\n- checks: unit emitter + sample log\n\n## Docs\n\n- docs/product/09-vertical-slice-and-acceptance.md\n\n## Depende de\n\n- MER-22\n- MER-33\n\n## Blocks\n- (nenhum explícito)\n\n## Owner\n\nEduardo\n\n## [mq:área]\n\n`qa`\n"
+  }
+}

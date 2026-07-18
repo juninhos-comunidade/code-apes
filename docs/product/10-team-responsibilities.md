@@ -4,12 +4,14 @@
 
 Lidera:
 
+- `game-core` (regras determinísticas / Linear MER-9, 21–23);
 - Phaser;
 - exploração;
 - combate;
 - sprites;
 - animações;
 - assets;
+- Design Book (co-owner com Guilherme);
 - integração visual;
 - E2E;
 - demo;
@@ -39,9 +41,11 @@ Lidera:
 - React;
 - Design System;
 - UX;
+- Design Book (co-owner com Eduardo);
 - IA do ponto de vista de prompt e experiência;
 - relatório;
-- deploy frontend.
+- deploy frontend;
+- workflow de agentes / Linear process (MER-5).
 
 Chamadas de IA passam pela API.
 
@@ -57,28 +61,37 @@ Chamadas de IA passam pela API.
 
 ## Handoffs
 
+Fonte alinhada: `sources/merge-quest-matriz-de-responsabilidades-v1.1.pdf` + Linear (issue de contrato React↔Phaser).
+
 ### Eduardo ↔ Guilherme
 
-- eventos;
+- eventos tipados React↔Phaser;
 - overlays;
-- pausa;
+- pausa/retomada;
 - snapshots;
 - design tokens;
-- responsividade.
+- responsividade;
+- nenhum lado acessa estado interno do outro.
 
 ### Hahn ↔ Guilherme
 
-- DTOs;
-- IA;
+- DTOs versionados;
+- execução de IA só na API (chaves protegidas);
 - auth;
-- erros;
+- erros padronizados;
+- loading/validação;
 - relatórios.
 
 ### Hahn ↔ Eduardo
 
 - checkpoint;
 - run state;
-- catálogo;
-- comandos;
-- eventos;
+- catálogo → mecânicas;
+- comandos/eventos;
 - persistência.
+
+### Regras da matriz
+
+- Eduardo coordena E2E/demo, mas **não** é o único testador.
+- Phaser **não** é fonte de verdade (ADR-0002).
+- Deploy: Hahn backend, Guilherme frontend, Eduardo valida ambiente integrado.

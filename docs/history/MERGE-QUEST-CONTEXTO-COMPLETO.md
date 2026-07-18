@@ -219,7 +219,7 @@ A IA interpreta, contextualiza e redige. A IA não pode:
 
 - `main` protegida;
 - branch curta por issue;
-- padrão `tipo/MQ-123-descricao`;
+- padrão `tipo/MER-123-descricao`;
 - PR obrigatório;
 - squash merge;
 - commits convencionais;

@@ -18,22 +18,23 @@
 - equipe dividida em três frentes.
 - API em Node.js + TypeScript, conforme ADR-0004.
 - Fastify, Drizzle ORM, PostgreSQL/Supabase e SDK oficial da OpenAI, conforme ADR-0005.
+- Committee multi-agente (Helper → … → Challenger → Team → Reviewer → Concluidor), Linear SoT, trilhas Full/Light/Asset-Content, sem hooks Cursor — ADR-0006.
 
-## Pontos que não devem bloquear a árvore
+## Pontos que não devem bloquear o vertical slice
 
 - provedor final de deploy;
-- ORM;
 - biblioteca de estado React;
 - biblioteca visual de teste;
 - observabilidade;
-- storage final.
+- storage final (Supabase Storage só com caso de uso);
 - estratégia de pool PostgreSQL por ambiente;
 - modelos OpenAI por caso de uso;
-- serviço isolado de sandbox.
+- serviço isolado de sandbox;
+- Initiative Linear criada na UI (MCP sem create initiative).
 
 ## Decisão de API reconciliada
 
-O documento inicial usa FastAPI. Em 17 de julho de 2026, a equipe aprovou Node.js + TypeScript para `apps/api`, preservando os contratos e as fronteiras de camadas. O framework HTTP e o ORM/query builder continuam abertos.
+O documento inicial usa FastAPI. Em 17 de julho de 2026, a equipe aprovou Node.js + TypeScript para `apps/api` (ADR-0004) e a stack Fastify/Drizzle/Supabase/OpenAI (ADR-0005). ORM não está mais aberto: **Drizzle**.
 
 ## Decisões substituídas
 
