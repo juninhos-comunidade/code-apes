@@ -30,23 +30,63 @@ Alinhar ao label de produto:
 | `priority:p1` | 3 Medium |
 | `priority:p2` | 4 Low |
 
-## Template de descrição
+## Template de descrição (obrigatório)
 
 ```markdown
 ## Objetivo
 
-## Aceite
-- [ ] …
+(1–3 frases; entrega verificável)
+
+## Escopo
+
+- In: …
+- Out: …
+
+## Aceite (DoD)
+
+- [ ] critério observável / testável
+- [ ] evidência (teste, comando, preview, schema…)
+- [ ] fronteira MQ (game-core / IA / Design Book) quando aplicável
+- [ ] (mínimo 4 checks)
+
+## Verify
+
+- perfil: Session | Delivery | Release
+- checks: …
 
 ## Docs
-- path/canônico
+
+- path/canônico — [abrir no GitHub](https://github.com/juninhos-comunidade/code-apes/blob/<branch>/path)
+- ADR-… → path real em `docs/architecture/adr/` (ver `docs/architecture/adr/README.md`)
+- Índice Linear: https://linear.app/mergequest/document/docs-canonicos-indice-p0-vs-2ea61c9e3079
 
 ## Depende de
-- MER-…
+
+- MER-… (ou `nenhuma`)
+
+## Blocks
+
+- MER-… (opcional; quem fica bloqueado)
 
 ## Owner
-Eduardo | Hahn | Guilherme
+
+Eduardo | Hahn | Guilherme | co-owners
+
+## [mq:área]
+
+game-core | runtime | web | api | content | art | qa | docs | process
 ```
+
+## Barra de qualidade
+
+| Check | Regra |
+|-------|--------|
+| Granularidade | 1–2 dias, um assignee, um project, sem misturar disciplinas |
+| Aceite | ≥4 itens testáveis; evidência implícita ou explícita |
+| Deps | só IDs `MER-*` ou `nenhuma` |
+| Owner | campo Owner preenchido; assignee = owner principal (Hahn unassigned + `blocked` até convite) |
+| Tag | `[mq:área]` alinhada a `docs/agents/routing.md` |
+| Verify | Session / Delivery / Release conforme `merge-quest-delivery-gate` |
 
 ## Granularidade
 

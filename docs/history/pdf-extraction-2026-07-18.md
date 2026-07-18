@@ -34,15 +34,17 @@
 | RF-05..07 Vaga | MER-13 |
 | RF-08 Cruzamento | MER-14 |
 | RF-09 Deck | MER-15 |
-| RF-10 Run | coberto por deck + exploração + API persistência (MER-15, MER-16, MER-25) |
-| RF-11 Exploração | MER-16 |
+| RF-10 Run | MER-38 (+ MER-15, MER-16, MER-25) |
+| RF-11 Exploração | MER-16, MER-36 (grafo salas) |
 | RF-12 Combate | MER-17, MER-23, MER-28 |
-| RF-13 Perguntas | MER-29 (+ combate) |
+| RF-13 Perguntas | MER-29, MER-39 (overlay cronômetro) |
 | RF-14 Loja | MER-18, MER-29 |
 | RF-15 Confiança | MER-21 |
 | RF-16 Recompensas | MER-17, MER-19 |
 | RF-17 Chefes | MER-19 |
-| RF-18 Nocaute/replay | MER-21, MER-23 |
+| RF-18 Nocaute/replay | MER-21, MER-23, MER-38 |
 | RF-19 Veredito | MER-20 |
+
+Transversal VS: MER-35 (contratos), MER-37 (telemetria).
 
 Épico: MER-8.

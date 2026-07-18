@@ -42,6 +42,8 @@ description: Capture and apply repeatable Merge Quest process/product practices 
 | 2026-07-18 | Swarm só como tática sob Orchestrator | plan lista waves; committee permanece SoT |
 | 2026-07-18 | Dry-runs devem ter approvals/ + reviews/ | sessão dry-run Full/Light/Asset |
 | 2026-07-18 | `npx skills add -g` pode falhar PromptScript; copy `~/.agents/skills` ok | skills-map inventário |
+| 2026-07-18 | Audit Linear: usar `get_issue` (list trunca description) | mcp-linear audit |
+| 2026-07-18 | Criar NEW MER-* antes de remap deps no batch | proposal + create order |
 
 ## Pontos de falha comuns
 
