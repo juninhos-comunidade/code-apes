@@ -102,7 +102,8 @@ MCP `plugin-linear-linear` can **list** cycles and **assign** issues (`save_issu
 
 ## Apply checklist (post-approval)
 
-- [ ] Cycles enabled + 4 cycles exist (`list_cycles` non-empty) — **GAP** human UI
+- [x] Cycles enabled + 4 cycles exist (`list_cycles` = 4 × 1w)
+- [x] `save_issue` `cycle` 1–4 for each wave (`hackathon-c*` ↔ native cycle)
 - [x] `save_project` Demo e entrega: start/target dates
 - [x] `save_issue` labels `hackathon-c*` + dueDate + priority for each row
 - [x] MER-8 / Done issues unchanged (no hackathon-c*)
