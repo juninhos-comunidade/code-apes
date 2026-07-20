@@ -41,10 +41,18 @@ Contrato comum: propor → Approval → mutar → auditar. O processo **não** t
 
 Se quiser o grill clássico no Cursor:
 
-```bash
-# restaurar do archive local, ou:
+Shell POSIX:
+
+```sh
 npx skills add mattpocock/skills@grill-me -g -y
 npx skills add mattpocock/skills@grilling -g -y
+```
+
+PowerShell:
+
+```powershell
+npx.cmd skills add mattpocock/skills@grill-me -g -y
+npx.cmd skills add mattpocock/skills@grilling -g -y
 ```
 
 No ambiente deste bootstrap (2026-07-18), `grill-me` e `grilling` foram restaurados em `~/.cursor/skills/`.

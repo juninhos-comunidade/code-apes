@@ -91,15 +91,31 @@ Usar skill quando houver ganho claro. Skills anexadas têm prioridade operaciona
 
 **SoT no repo:** skills P0 vivem em [`.agents/skills/`](../.agents/skills/) (ao lado das `merge-quest-*`) e versões em [`skills-lock.json`](../skills-lock.json). Colegas recebem via `git pull` — sem instalação extra para o workflow MQ.
 
+**Proveniência:** [`docs/agents/external-skills-inventory.json`](agents/external-skills-inventory.json) registra repositório, commit auditado, licença, caminho e hash. `skills-lock.json` continua sendo o lock operacional; o inventário é o registro de auditoria e ambos devem permanecer sincronizados.
+
 **Onboarding / refresh:**
 
-```bash
+Shell POSIX:
+
+```sh
 # após clone ou para restaurar a partir do lock
 npx skills experimental_install
 
 # opcional: espelho global do operador (PromptScript -g falha; copy em ~/.agents/skills ok)
 npx skills add <owner/repo> -s <skill> -g -y --copy
 ```
+
+PowerShell:
+
+```powershell
+# após clone ou para restaurar a partir do lock
+npx.cmd skills experimental_install
+
+# opcional: espelho global do operador
+npx.cmd skills add <owner/repo> -s <skill> -g -y --copy
+```
+
+Antes de atualizar uma externa, revise o diff, confirme a licença e atualize lock e inventário no mesmo PR.
 
 | Skill | Pacote | Papel MQ |
 |-------|--------|----------|
