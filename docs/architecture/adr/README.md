@@ -10,6 +10,7 @@
 | [ADR-0004](ADR-0004-typescript-api.md) | API Node.js + TypeScript | Aceita |
 | [ADR-0005](ADR-0005-api-infrastructure-stack.md) | Fastify, Zod, Drizzle, Supabase, OpenAI | Aceita |
 | [ADR-0006](ADR-0006-agent-workflow-committee.md) | Committee multi-agente (Linear SoT, Challenger, trilhas) | Aceita / Revisável |
+| [ADR-0007](ADR-0007-phaser-4.md) | Phaser 4 como adaptador visual | Aceita / Revisável |
 
 ## Como propor nova ADR
 

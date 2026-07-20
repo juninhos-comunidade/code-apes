@@ -56,7 +56,7 @@ O sistema não declara que uma pessoa “não sabe” algo apenas porque não en
 - pnpm Workspaces;
 - Turborepo;
 - React + Vite;
-- Phaser 3 montado na web;
+- Phaser 4 montado na web;
 - `game-core` TypeScript puro;
 - API atrás de contratos;
 - PostgreSQL/Supabase como baseline;

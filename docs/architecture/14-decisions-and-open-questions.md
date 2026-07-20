@@ -5,7 +5,7 @@
 - monorepo;
 - pnpm + Turborepo;
 - React shell;
-- Phaser interno;
+- Phaser 4 interno, conforme ADR-0007;
 - game-core determinístico;
 - IA atrás da API;
 - PostgreSQL/Supabase baseline;
