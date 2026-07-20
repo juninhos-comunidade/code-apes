@@ -93,13 +93,20 @@ comando de React ou Phaser
 
 `game-core` não importa React, Phaser, DOM, rede, banco de dados ou SDK de IA.
 
+### Diagrama completo
+
+![Arquitetura desacoplada do Merge Quest com Phaser 4](docs/architecture/merge-quest-system-architecture.png)
+
+Para editar ou ampliar sem perder qualidade, use a
+[versão vetorial em SVG](docs/architecture/merge-quest-system-architecture.svg).
+
 ## Stack
 
 | Área | Tecnologia |
 |---|---|
 | Monorepo | pnpm Workspaces + Turborepo |
 | Web | React + Vite + TypeScript |
-| Jogo | Phaser 3 |
+| Jogo | Phaser 4.2 |
 | Core | TypeScript puro e determinístico |
 | API | Node.js + Fastify + Zod |
 | Persistência | PostgreSQL/Supabase + Drizzle ORM |

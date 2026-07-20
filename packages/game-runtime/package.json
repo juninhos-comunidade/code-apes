@@ -5,7 +5,7 @@
   "scripts": {},
   "dependencies": {
     "@merge-quest/game-core": "workspace:*",
-    "phaser": "^3.90.0"
+    "phaser": "4.2.0"
   },
   "devDependencies": {
     "typescript": "catalog:"
