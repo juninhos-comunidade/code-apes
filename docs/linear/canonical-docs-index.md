@@ -1,10 +1,8 @@
 # Índice canônico — docs para Linear / produção
 
-**Repo SoT.** Linear Documents espelham este índice com links GitHub.  
-**Branch de trabalho (PR #1):** `docs/MER-5-agent-workflow-harness`  
-**Base URL:** `https://github.com/juninhos-comunidade/code-apes/blob/docs/MER-5-agent-workflow-harness/`
-
-Após merge em `main`, trocar o segmento da branch por `main`.
+**Repo SoT.** Linear Documents espelham este índice com links GitHub.
+**Branch canônica:** `main`
+**Base URL:** `https://github.com/juninhos-comunidade/code-apes/blob/main/`
 
 ## Espelhos no Linear
 
