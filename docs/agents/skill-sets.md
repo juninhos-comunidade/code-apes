@@ -44,7 +44,8 @@ Mapa operacional: [`docs/skills-map.md`](../skills-map.md).
 | Local | Papel |
 |-------|--------|
 | `.agents/skills/merge-quest-*` | **Canônico** MQ no repo (tool-agnóstico) |
-| `.agents/skills/<externa-P0>` + `skills-lock.json` | Externas P0 versionadas no repo (ver `docs/skills-map.md`) |
+| `.agents/skills/<externa-P0>` + `skills-lock.json` | Externas P0 versionadas e verificadas pelo inventário de proveniência |
+| `docs/agents/external-skills-inventory.json` | Fonte, commit auditado, licença, caminho e hash de cada externa |
 | `~/.cursor/skills/` ou `~/.agents/skills/` | Locais/espelho opcional do operador |
 | `npx skills experimental_install` | Restaura externas P0 a partir do lock |
 | `npx skills add … -y --copy` | Adiciona/atualiza externa; atualizar mapa |
@@ -63,6 +64,7 @@ Não é obrigatório symlinks `.cursor/skills` → repo para skills MQ.
 | Swarm como tática | **Permitido** — Orchestrator paraleliza fatias; saídas em sessão |
 | grill-me / brainstorming | Opcional no Helper; não é núcleo |
 | Barra P0 | ≥1K installs (preferir ≥10K) **ou** fonte oficial |
+| Nova vendorização | Exige inventário completo, licença revisada, hash e PR específico |
 
 ## Deny-list (resumo)
 

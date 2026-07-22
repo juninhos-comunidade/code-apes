@@ -21,7 +21,7 @@ Definir o contrato verificável do committee multi-agente Merge Quest: papéis, 
 ### Out
 
 - Implementação de features de jogo
-- Vendorar skills externas em massa
+- Nova vendorização de skill externa sem fonte, commit, licença, hash e revisão explícitos
 - Initiative/Projects Linear (cobertos pelo doc 12 + Approval)
 
 ## 3. Fontes de verdade

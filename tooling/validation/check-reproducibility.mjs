@@ -1,6 +1,8 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
+import { checkRepositorySkillsProvenance } from "./check-skills-provenance.mjs";
+
 const root = resolve(import.meta.dirname, "../..");
 const failures = [];
 const passes = [];
@@ -120,6 +122,10 @@ for (const path of environmentExamples) {
 const lockfileBefore = readText("pnpm-lock.yaml");
 if (lockfileBefore.includes("lockfileVersion:")) pass("pnpm lockfile present");
 else fail("pnpm lockfile is malformed");
+
+const provenanceFailures = checkRepositorySkillsProvenance();
+if (provenanceFailures.length === 0) pass("external skills provenance");
+else for (const message of provenanceFailures) fail(message);
 
 console.log(`Reproducibility checks passed: ${passes.length}`);
 for (const message of passes) console.log(`PASS ${message}`);

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "auditedAt": "2026-07-20",
+  "policy": {
+    "canonicalDirectoryPrefix": "merge-quest-",
+    "vendoredExceptions": ["game-object-components", "game-setup-and-config"],
+    "unknownLicenseRedistribution": "requires-review",
+    "vendoredTreeHash": "88e467d26592fbe300b7a8d464980a85bca19eb6e6b46f133fe4f03eec6b11e9"
+  },
+  "repositories": {
+    "addyosmani/agent-skills": { "commit": "2fbfa004a0192529bc997d103fc12f19a3804aab", "license": "MIT" },
+    "antfu/skills": { "commit": "a74f281a27dadc02397bc1a174b0f2c97531b6ae", "license": "MIT" },
+    "anthropics/skills": { "commit": "fa0fa64bdc967915dc8399e803be67759e1e62b8", "license": "UNKNOWN" },
+    "mattpocock/skills": { "commit": "9603c1cc8118d08bc1b3bf34cf714f62178dea3b", "license": "MIT" },
+    "microsoft/playwright-cli": { "commit": "eee5a185c98e6b04d88f580d45a854e9692ab50b", "license": "Apache-2.0" },
+    "obra/superpowers": { "commit": "d884ae04edebef577e82ff7c4e143debd0bbec99", "license": "MIT" },
+    "phaserjs/phaser": { "commit": "41be1e462bc600064e498cba370bfa8c5c055a22", "license": "MIT" },
+    "supabase/agent-skills": { "commit": "1ad9aaeb49caafd9e95c0a91116f71890eebbc53", "license": "MIT" },
+    "vercel-labs/agent-skills": { "commit": "f8a72b9603728bb92a217a879b7e62e43ad76c81", "license": "UNKNOWN" }
+  },
+  "skills": {
+    "code-review": { "source": "mattpocock/skills", "path": "skills/engineering/code-review/SKILL.md", "legacyContentHash": "31d149a480eaa68c11e32f5ee77f0fd0b98a906834d531d881d502352edd0b8e" },
+    "dispatching-parallel-agents": { "source": "obra/superpowers", "path": "skills/dispatching-parallel-agents/SKILL.md", "legacyContentHash": "85df55d2235a7623b315dac4bc340c14a37dcdc57c869c80a829e1a53a174689" },
+    "documentation-and-adrs": { "source": "addyosmani/agent-skills", "path": "skills/documentation-and-adrs/SKILL.md", "legacyContentHash": "7464fd2950b99fb00bbf65cab27653e0a049eef00c98927713ffdfe232a9daa9" },
+    "domain-modeling": { "source": "mattpocock/skills", "path": "skills/engineering/domain-modeling/SKILL.md", "legacyContentHash": "363cb0f53b0b431e7c00086ad1f823500b7e1b70b5616ee969c979f0934e9e6e" },
+    "executing-plans": { "source": "obra/superpowers", "path": "skills/executing-plans/SKILL.md", "legacyContentHash": "08604f93f2e38dd3575e5503c79cda5c623c78a8df0e472457ac5ef7a33f22b8" },
+    "game-object-components": { "source": "phaserjs/phaser", "path": "skills/game-object-components/SKILL.md", "legacyContentHash": "48dde2e855f8e87b8920d62eca7fff335a197c9fd89aac61e95cf1487c3432b5", "vendoredException": true },
+    "game-setup-and-config": { "source": "phaserjs/phaser", "path": "skills/game-setup-and-config/SKILL.md", "legacyContentHash": "9864274b28b515d15ea06e10c45c7dd44133013ae381664ff8cd445d2c0c4403", "vendoredException": true },
+    "grill-me": { "source": "mattpocock/skills", "path": "skills/productivity/grill-me/SKILL.md", "legacyContentHash": "f361db4e15e6bfd562a9282b1dccda513910a50061f9e838ce017be9c69dde3f" },
+    "improve-codebase-architecture": { "source": "mattpocock/skills", "path": "skills/engineering/improve-codebase-architecture/SKILL.md", "legacyContentHash": "66e8a50c83c3c724fcfe0769701b665c56cec220cc4f49cc1aee8bdfc07de94a" },
+    "playwright-cli": { "source": "microsoft/playwright-cli", "path": "skills/playwright-cli/SKILL.md", "legacyContentHash": "f602822b51bcb6d033749c60731b8f1e80f308222fcb2e4af551905a817c6e08" },
+    "receiving-code-review": { "source": "obra/superpowers", "path": "skills/receiving-code-review/SKILL.md", "legacyContentHash": "3f56080356c62e4f74a183d7371686babc661e41a952dc67a97c2c76fe8a9329" },
+    "requesting-code-review": { "source": "obra/superpowers", "path": "skills/requesting-code-review/SKILL.md", "legacyContentHash": "cde520e9118d7e6b74b5ab0123cff2f68d9c07bddb3f82c997753b6126600aed" },
+    "subagent-driven-development": { "source": "obra/superpowers", "path": "skills/subagent-driven-development/SKILL.md", "legacyContentHash": "aaeb6686111c76b3c38e09156fe18af44d73b324ee055e5cb0ab63dc776f216f" },
+    "supabase": { "source": "supabase/agent-skills", "path": "skills/supabase/SKILL.md", "legacyContentHash": "17a437f3de2371ec43ad8a17d3e858337695efb46ed4af5dd6426f330bb6d032" },
+    "supabase-postgres-best-practices": { "source": "supabase/agent-skills", "path": "skills/supabase-postgres-best-practices/SKILL.md", "legacyContentHash": "ec56a54fba0e97bee52c7f244ba603bb284bf8d1b739c66a5cc84ec3df709d9d" },
+    "tdd": { "source": "mattpocock/skills", "path": "skills/engineering/tdd/SKILL.md", "legacyContentHash": "81eca2a5b53a63f481c0849be7a663a8cd43d5cf53f32b644ec0a2f50cf91aa2" },
+    "test-driven-development": { "source": "obra/superpowers", "path": "skills/test-driven-development/SKILL.md", "legacyContentHash": "eee144aea35d783296d178017e9fe843c6d16cc8b240e106f5e50910f6caf329" },
+    "vercel-composition-patterns": { "source": "vercel-labs/agent-skills", "path": "skills/composition-patterns/SKILL.md", "license": "MIT", "legacyContentHash": "575757e3e25761c8c562d6e395d29f0b76c98b1273c0bd72d88e6ab1bc9c7d42" },
+    "vercel-react-best-practices": { "source": "vercel-labs/agent-skills", "path": "skills/react-best-practices/SKILL.md", "license": "MIT", "legacyContentHash": "ca7b0c0c6e5f2750043f7f0cd72d16ac4e2abc48f9b5500d047a4b77a2506212" },
+    "verification-before-completion": { "source": "obra/superpowers", "path": "skills/verification-before-completion/SKILL.md", "legacyContentHash": "9b446f0c7fe1cfb560b1d34439523b1a76d5f177290007b2c053a1c749a4a8ba" },
+    "vitest": { "source": "antfu/skills", "path": "skills/vitest/SKILL.md", "legacyContentHash": "943d436114c677802426741980146c07560bf375297666b03062444f4b98a785" },
+    "web-design-guidelines": { "source": "vercel-labs/agent-skills", "path": "skills/web-design-guidelines/SKILL.md", "license": "UNKNOWN", "redistributionReview": "required", "legacyContentHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474" },
+    "webapp-testing": { "source": "anthropics/skills", "path": "skills/webapp-testing/SKILL.md", "license": "Apache-2.0", "legacyContentHash": "ad5b1fc52807e9afa4635e59218a026b164dc58b6c3f41b0f7c644dcd6ccf572" },
+    "writing-plans": { "source": "obra/superpowers", "path": "skills/writing-plans/SKILL.md", "legacyContentHash": "b73b59d43c34c3fc225bfae419c458bb216af80df25fc0c545dfa7fd2a161722" }
+  }
+}

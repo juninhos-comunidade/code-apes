@@ -2,6 +2,13 @@
 
 Alterações de processo (committee, harnesses, skills, trilhas). Não cobre features de produto.
 
+## 2026-07-20 — proveniência das skills externas
+
+- skills externas preservadas com inventário de fonte, commit, licença, caminho e hash;
+- gate de reprodutibilidade detecta drift entre conteúdo vendorizado, lock e inventário;
+- onboarding de skills documentado para PowerShell e shell POSIX;
+- nova vendorização externa exige auditoria explícita no mesmo PR.
+
 ## 2026-07-18 — refinement harness + feedback loop
 
 - Feedback loop: Learnings disposition (`practice` | `promote-to-skill` | `promote-to-ADR` | `discard`) em conclusion
