@@ -58,7 +58,9 @@ export function validateSkillsProvenance({ lock, inventory, directories, vendore
     if (audited.path !== locked.skillPath) failures.push(`path mismatch for ${name}`);
     if (audited.legacyContentHash !== locked.computedHash) failures.push(`hash mismatch for ${name}`);
     if (!hashPattern.test(audited.legacyContentHash ?? "")) failures.push(`invalid hash for ${name}`);
-    const effectiveLicense = audited.license ?? inventory.repositories?.[audited.source]?.license;
+    const repository = inventory.repositories?.[audited.source];
+    if (!repository) failures.push(`missing repository provenance for ${name}: ${audited.source}`);
+    const effectiveLicense = audited.license ?? repository?.license;
     if (!effectiveLicense) failures.push(`missing license for ${name}`);
     if (effectiveLicense === "UNKNOWN" && audited.redistributionReview !== "required") {
       failures.push(`unknown license is not acknowledged for ${name}`);

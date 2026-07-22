@@ -77,6 +77,21 @@ test("requires explicit review when a license is unknown", () => {
   );
 });
 
+test("requires repository commit provenance for every locked skill", () => {
+  const withoutRepository = structuredClone(inventory);
+  delete withoutRepository.repositories["owner/repo"];
+  withoutRepository.skills.external.license = "MIT";
+
+  const failures = validateSkillsProvenance({
+    lock,
+    inventory: withoutRepository,
+    directories: ["external"],
+    vendoredTreeHash: "d".repeat(64),
+  });
+
+  assert.ok(failures.includes("missing repository provenance for external: owner/repo"));
+});
+
 test("detects a real vendored file change while metadata stays unchanged", () => {
   const directory = mkdtempSync(join(tmpdir(), "merge-quest-skills-"));
   try {

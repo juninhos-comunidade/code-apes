@@ -46,3 +46,17 @@ Nenhuma mutação proposta nesta entrega.
 Commit sugerido: `fix(agents): audita skills externas sem removê-las`.
 
 PR específico contra `main`, em modo draft, autorizado no artefato de Approval.
+
+## Correção pré-merge
+
+Um teste adversarial comprovou que uma skill com licença individual ainda podia
+omitir o registro do repositório e do commit auditado. Foi criado primeiro um
+teste de regressão que falhou; depois o validador passou a exigir o repositório
+de origem para toda entrada do lock.
+
+Evidência após a correção:
+
+- 6/6 testes do gate de proveniência;
+- 22/22 checks de reprodutibilidade;
+- `git diff --check` limpo;
+- nenhuma alteração em `.agents/skills/` ou `skills-lock.json`.
