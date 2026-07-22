@@ -10,7 +10,8 @@ approvals:
   - approvals/2026-07-21-brief.md
   - approvals/2026-07-21-plan-post-challenger.md
   - approvals/2026-07-21-git-pr-mer-10.md
-updatedAt: 2026-07-21T22:45:41Z
+  - approvals/2026-07-21-merge-waiver.md
+updatedAt: 2026-07-22T00:03:32Z
 updatedBy: workflow:team-art
 ```
 
@@ -35,4 +36,5 @@ updatedBy: workflow:team-art
 - O verificador subjacente de reproducibilidade passou 21 checks com Node 24.15.0 e pnpm 11.9.0 informados no processo; o wrapper canônico continua pendente.
 - A revisão 3 da Wave B também deve alinhar o contrato de layers à ordem canônica do Design Book: `shadow`, `body`, `equipment`, `effects`, `guides`.
 - O pedido de revisão do co-owner e suas evidências estão em `co-owner-review-request.md`.
-- Commit, push e PR draft da MER-10 foram autorizados em `approvals/2026-07-21-git-pr-mer-10.md`; merge permanece fora do Approval.
+- Commit, push e PR draft da MER-10 foram autorizados em `approvals/2026-07-21-git-pr-mer-10.md`; o merge permanecia fora daquele Approval.
+- O merge passou a ser autorizado com waiver explícito em `approvals/2026-07-21-merge-waiver.md`; gates dispensados continuam registrados como pendentes, não como aprovados.
