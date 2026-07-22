@@ -6,8 +6,10 @@ track: Full
 linearIssues: [MER-8, MER-9, MER-10, MER-11, MER-12, MER-13, MER-14, MER-15, MER-16, MER-17, MER-18, MER-19, MER-20, MER-21, MER-22, MER-23, MER-24, MER-25, MER-26, MER-27, MER-28, MER-29, MER-30, MER-31, MER-32, MER-33, MER-34, MER-35, MER-36, MER-37, MER-38, MER-39, MER-40, MER-41, MER-42, MER-43]
 phase: conclusion
 pendingTeamTasks: []
-approvals: [approvals/2026-07-20-linear-replan.md]
-updatedAt: 2026-07-20T00:05:00-03:00
+approvals:
+  - approvals/2026-07-20-linear-replan.md
+  - approvals/2026-07-21-merge-waiver.md
+updatedAt: 2026-07-21T21:10:39-03:00
 updatedBy: human:eduardo-neves
 ```
 
@@ -26,3 +28,5 @@ updatedBy: human:eduardo-neves
 
 - A mutação foi executada após Approval do pacote.
 - A Initiative permanece como ajuste manual porque o conector disponível não expõe criação ou associação de Initiative.
+- O waiver permite publicar o replanejamento sem tratar a MER-32 ou as pendências administrativas do Linear como concluídas.
+- Na auditoria pré-merge, Hahn estava ativo, mas MER-41 e MER-42 permaneciam sem assignee; nenhuma mutação no Linear foi autorizada.
